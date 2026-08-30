@@ -1,5 +1,7 @@
 # AI Strategic Autonomy Framework (AI-SAF)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22178006.svg)](https://doi.org/10.5281/zenodo.22178006)
+
 A framework for measuring AI strategic autonomy: **whether an organisation or a state can
 keep its critical AI systems running, and keep improving them, if a supplier or a
 government withdraws access.**
@@ -78,10 +80,15 @@ read as a proposal with a diff attached rather than as a merge waiting to happen
 
 ```
 Alexandrov, G. (2026). AI Strategic Autonomy Framework: Assessment Framework
-(Version 0.7.1) [Document package]. https://github.com/galexandrov11/ai-saf
+(Version 0.7.1) [Document package]. https://doi.org/10.5281/zenodo.22178006
 ```
 
-A DOI is pending Zenodo registration. `CITATION.cff` carries the machine-readable form.
+That is the package's own citation block, verbatim — the same string the documents
+carry and the site prints. `CITATION.cff` holds the machine-readable form, and GitHub
+renders it as "Cite this repository" in the sidebar.
+
+Cite the version you actually read. The DOI above is minted per release, and the
+framework changes between them.
 
 ## Licence
 
