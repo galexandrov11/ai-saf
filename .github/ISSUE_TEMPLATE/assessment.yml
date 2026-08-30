@@ -1,0 +1,41 @@
+name: Independent assessment
+description: You scored an organisation or a state against the published anchors.
+title: "[Assessment] "
+labels: ["independent-assessment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the one that counts toward v1.0: the framework needs at least two
+        assessments performed by someone other than the author. A disagreement of more
+        than one band means an anchor is ambiguous — which is the finding, not a failure.
+  - type: dropdown
+    id: instrument
+    attributes:
+      label: Which instrument
+      options:
+        - AI-SAF-C (corporate)
+        - AI-SAF-N (national)
+    validations:
+      required: true
+  - type: input
+    id: subject
+    attributes:
+      label: What you scored
+      description: A named state, or an organisation described as specifically as you are able to share.
+    validations:
+      required: true
+  - type: input
+    id: result
+    attributes:
+      label: Where you landed
+      description: "Headline plus both axis subtotals, e.g. 57 (R 45 / 60, A 12 / 40)."
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: Which anchors were ambiguous
+      description: The most useful part of the report. Where did you have to guess what an anchor meant?
+    validations:
+      required: true

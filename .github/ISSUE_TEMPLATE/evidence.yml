@@ -1,0 +1,33 @@
+name: Missing from the Evidence Base
+description: A 2024–2026 incident or instrument the record does not have.
+title: "[Evidence] "
+labels: ["evidence-base"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The Evidence Base is the framework's foundation: every scoring choice is meant to
+        trace to something that happened. A gap here is a gap in the framework.
+  - type: input
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: Date (or date range)
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources
+      description: Official records, filings, rulings, transcripts where possible; press coverage where not.
+    validations:
+      required: true
+  - type: textarea
+    id: pillar
+    attributes:
+      label: Which pillar it moves, and why

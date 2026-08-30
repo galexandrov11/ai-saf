@@ -1,0 +1,50 @@
+name: Methodology critique
+description: A weight, an anchor, an axis tag or an aggregation rule you think is wrong.
+title: "[Methodology] "
+labels: ["methodology"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The framework's own standing questions, if you want a starting point: which weight
+        would you move? Which sub-indicator is tagged to the wrong axis? Where does the
+        national/corporate inversion break down? Is the single-jurisdiction cap the right
+        mechanism? Does the additive aggregation contradict the weakest-link thesis?
+  - type: dropdown
+    id: area
+    attributes:
+      label: What are you challenging?
+      options:
+        - A pillar weight
+        - A sub-indicator anchor
+        - A resilience / autonomy tag
+        - An aggregation or modifier rule
+        - The national / corporate inversion
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: locus
+    attributes:
+      label: Which one, exactly
+      description: Name the pillar, sub-indicator id, or rule — e.g. "models.portfolio" or "the 2-of-5 single-jurisdiction cap".
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: What is wrong, and what should it be instead
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: A dated incident or a study, with a link. Intuition is welcome but it does not move a weight.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Framework version you read
+      value: v0.7.1
