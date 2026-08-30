@@ -87,8 +87,11 @@ That is the package's own citation block, verbatim — the same string the docum
 carry and the site prints. `CITATION.cff` holds the machine-readable form, and GitHub
 renders it as "Cite this repository" in the sidebar.
 
-Cite the version you actually read. The DOI above is minted per release, and the
-framework changes between them.
+Cite the version you actually read: the DOI above is minted per release, and the
+framework changes between them. Where you mean the framework rather than one release —
+a reading list, a talk, a profile — use the concept DOI,
+[10.5281/zenodo.22178005](https://doi.org/10.5281/zenodo.22178005), which always resolves
+to the newest version.
 
 ## Licence
 
