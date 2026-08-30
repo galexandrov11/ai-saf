@@ -9,7 +9,7 @@ government withdraws access.**
 This repository holds the framework itself — the documents, the scoring rubric and the
 Evidence Base — at the version they were published. The self-assessment instrument, the
 document reader and the searchable Evidence Base are at
-**[ai-sovereignty.vercel.app](https://ai-sovereignty.vercel.app)**.
+**[ai-strategic-autonomy.org](https://ai-strategic-autonomy.org)**.
 
 Current release: **v0.7.1** (August 2026). CC BY 4.0.
 
@@ -67,7 +67,7 @@ The second precondition is why this repository takes issues. Three templates cov
 critique that changes a version — a methodology challenge, a missing Evidence Base
 incident, an independent assessment — and anything else is welcome as a blank issue.
 **[Open an issue](https://github.com/galexandrov11/ai-saf/issues/new/choose)**, or read
-[how to review the framework](https://ai-sovereignty.vercel.app/review) first.
+[how to review the framework](https://ai-strategic-autonomy.org/review) first.
 
 What makes a critique land: point at something dated and sourced. The Evidence Base is the
 referee — every scoring choice is supposed to trace to something that actually happened,
