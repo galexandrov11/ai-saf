@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "AI Strategic Autonomy Framework: Assessment Framework"
+abstract: >-
+  A framework for measuring AI strategic autonomy: whether an organisation or a state
+  can keep its critical AI systems running, and keep improving them, if a supplier or a
+  government withdraws access. Nine weighted pillars for companies, eight for states,
+  scored against written anchors; every sub-indicator tagged resilience or autonomy;
+  published with an Evidence Base of dated 2024-2026 incidents and primary sources.
+type: dataset
+authors:
+  - family-names: Alexandrov
+    given-names: G.
+version: 0.7.1
+date-released: "2026-08-01"
+license: CC-BY-4.0
+url: "https://ai-sovereignty.vercel.app"
+repository: "https://github.com/galexandrov11/ai-saf"
+keywords:
+  - AI sovereignty
+  - strategic autonomy
+  - technology policy
+  - assessment framework
+  - export controls

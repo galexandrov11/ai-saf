@@ -1,0 +1,437 @@
+{
+  "$comment": "AI-SAF-C scoring rubric, migrated in place from AI-SAF Framework v0.5.7 (July 2026) to v0.7.1 (August 2026) — a re-authored, five-document package in which AI-SAF-C now leads as Document 2 (it was Document 3 under v0.5.7). This is slice 4's migration (2026-08-28-ai-saf-site-slice-4): the 38 corporate sub-indicators are unchanged in points and pillar-weight sums, so the rubric updates in place rather than regenerating. It applies the design spec's three settled author rulings (spec §2): (1) models.portfolio is renamed and rescored to jurisdiction diversity rather than provider count, per the document's stated cap ('a portfolio of three US providers scores at most 2 of 5'); (2) both scale-discount tiers the document states (0.85 under 500 employees, 0.92 for 500-2,000) are now carried in modifiers, where only the first had been; (3) data.ip is included in the axis arithmetic as [R], reversing v0.5.7's 'sits slightly apart from the two axes'. Weights and sub-weights are taken verbatim from the source document. Band anchors marked source:'document' are stated in the source; anchors marked source:'authored' were written for the web tool and REQUIRE AUTHOR REVIEW before launch. scoreCitationFormat's leading 'AI-SAF-C v{X.Y.Z}' is a literal, not derived from frameworkVersion — the two drifted out of sync once already during this very migration (caught only by review). Keep them equal on every version bump; rubric.test.ts asserts it, so a future bump that misses this field fails the suite loudly instead of shipping a citation that names the wrong version.",
+  "framework": "AI-SAF-C",
+  "frameworkVersion": "0.7.1",
+  "variant": "corporate",
+  "scale": { "min": 0, "max": 100, "direction": "higher is more sovereign" },
+  "totalWeight": 100,
+  "subIndicatorCount": 38,
+
+  "quickCheck": {
+    "$comment": "Tier 1. One question per pillar. Produces a BAND and an indicative range, never a precise score.",
+    "questions": [
+      { "pillar": "data", "prompt": "How well do you control the proprietary data that reaches AI models?", "options": [
+        { "value": 0, "label": "Staff send whatever they like to public models. No classification, no gateway, no no-train clauses." },
+        { "value": 1, "label": "Policy exists on paper. No technical enforcement." },
+        { "value": 2, "label": "Central AI gateway with logging; no-train clauses in the main contracts." },
+        { "value": 3, "label": "Gateway plus automated redaction/DLP; documented residency; audit rights." },
+        { "value": 4, "label": "Above, plus the most sensitive classes never leave — in-VPC, on-prem or confidential compute." } ] },
+      { "pillar": "models", "prompt": "If your primary model provider cut you off tomorrow, what keeps running?", "options": [
+        { "value": 0, "label": "Nothing. Single frontier provider, no fallback. (L0)" },
+        { "value": 1, "label": "We have an open-weights model somewhere, untested. (L1, dormant)" },
+        { "value": 2, "label": "A second provider is wired in and could take traffic. (L1)" },
+        { "value": 3, "label": "Open-weights model running on our own infrastructure, taking real traffic. (L2)" },
+        { "value": 4, "label": "Above, plus fine-tuned models of ours in production and a tested RTO under 72 hours. (L2+)" } ] },
+      { "pillar": "infrastructure", "prompt": "Where do your AI workloads actually run, and under whose law?", "options": [
+        { "value": 0, "label": "US hyperscaler default region. No jurisdiction strategy." },
+        { "value": 1, "label": "EU region on a US hyperscaler. No further controls." },
+        { "value": 2, "label": "EU region plus a written jurisdiction strategy and DR runbooks." },
+        { "value": 3, "label": "Sovereign or EU-jurisdiction provider for sensitive workloads, or meaningful own-GPU capacity." },
+        { "value": 4, "label": "Above, plus confidential computing (TEE) with attestation on regulated workloads." } ] },
+      { "pillar": "hardware", "prompt": "How exposed are you to a single accelerator vendor?", "options": [
+        { "value": 0, "label": "100% NVIDIA via one cloud, no reserved capacity, no plan." },
+        { "value": 1, "label": "One vendor, but some reserved multi-year capacity." },
+        { "value": 2, "label": "A second silicon path is evaluated but not in production." },
+        { "value": 3, "label": "Production traffic on at least two of NVIDIA / AMD / cloud ASIC." },
+        { "value": 4, "label": "Above, plus a documented and rehearsed migration plan for an export-control shock." } ] },
+      { "pillar": "manufacturing", "prompt": "Does your procurement understand the silicon supply chain?", "options": [
+        { "value": 0, "label": "No. Capacity is assumed to be available on demand." },
+        { "value": 2, "label": "Partly. Lead times are tracked but not the underlying constraints." },
+        { "value": 4, "label": "Yes. CoWoS packaging, HBM supply and foundry constraints feed buying decisions." } ] },
+      { "pillar": "software", "prompt": "How much of your production AI stack only runs on CUDA?", "options": [
+        { "value": 0, "label": "All of it, and we have never tested an alternative." },
+        { "value": 1, "label": "Most of it. One framework, one runtime, one vendor's MLOps." },
+        { "value": 2, "label": "Mostly CUDA, but the runtime layer is portable (vLLM/SGLang)." },
+        { "value": 3, "label": "Portability is a deliberate design constraint; alternatives are tested." },
+        { "value": 4, "label": "Above, plus we contribute upstream to the projects we depend on." } ] },
+      { "pillar": "humanCapital", "prompt": "How deep is real AI capability in your workforce?", "options": [
+        { "value": 0, "label": "A handful of enthusiasts. No specialists on staff." },
+        { "value": 1, "label": "Some ML specialists, concentrated in one team, no bus-factor cover." },
+        { "value": 2, "label": "Specialists plus a training programme; adoption is patchy." },
+        { "value": 3, "label": "A formal enablement programme; a measurable share of engineers use AI tooling on real work." },
+        { "value": 4, "label": "Above, plus tracked retention of AI staff and literacy beyond the engineering org." } ] },
+      { "pillar": "regulatory", "prompt": "How ready are you for the AI Act obligations applying from August 2026?", "options": [
+        { "value": 0, "label": "We have not classified our AI systems." },
+        { "value": 1, "label": "Inventory started. No risk classification, no technical documentation." },
+        { "value": 2, "label": "Risk classification complete; documentation and DPIAs in progress." },
+        { "value": 3, "label": "Classification, technical documentation, FRIAs and registry entries complete." },
+        { "value": 4, "label": "Above, plus ISO/IEC 42001 certification and independent model validation." } ] },
+      { "pillar": "culture", "prompt": "Who is accountable when a model misbehaves, and how fast can you undo it?", "options": [
+        { "value": 0, "label": "Nobody named. No rollback procedure." },
+        { "value": 1, "label": "A committee exists on paper. Rollback is ad hoc." },
+        { "value": 2, "label": "Named owner, written model-risk policy, rollback documented but untested." },
+        { "value": 3, "label": "Board-level oversight, tested rollback, incident playbooks rehearsed." },
+        { "value": 4, "label": "Above, plus evaluation gates on release and disciplined experimentation as routine." } ] }
+    ],
+    "bands": [
+      { "min": 0,  "max": 11, "key": "exposed",   "label": "Exposed",       "indicativeRange": "15-30", "line": "A single supplier decision could stop most of your AI work. Treat this as an operational risk, not a strategy question." },
+      { "min": 12, "max": 20, "key": "dependent", "label": "Dependent",     "indicativeRange": "30-45", "line": "You have policy but not much practice. The gap between the two is where Version Deadlock forms." },
+      { "min": 21, "max": 28, "key": "hedged",    "label": "Hedged",        "indicativeRange": "45-60", "line": "Real fallbacks exist. The open question is whether they have been tested under load." },
+      { "min": 29, "max": 33, "key": "resilient", "label": "Resilient",     "indicativeRange": "60-72", "line": "You would survive a supplier cut-off. Autonomy — who sets your technology path — is the harder remaining half." },
+      { "min": 34, "max": 36, "key": "sovereign", "label": "Self-directed", "indicativeRange": "72-85", "line": "Rare. Worth completing the full assessment to find out which of the two axes is actually carrying the score." }
+    ]
+  },
+
+  "pillars": [
+    {
+      "id": "data", "n": 1, "name": "Data", "weight": 14,
+      "summary": "When everyone can get roughly the same models, your own private data and the contracts protecting it become the strongest advantage you have.",
+      "subIndicators": [
+        { "id": "data.corpus", "name": "Own corpus and quality", "max": 5, "source": "authored",
+          "question": "How much genuine, domain-specific data do you hold that could be used to adapt a model?",
+          "anchors": [
+            { "score": 0, "label": "No curated dataset. Nothing assembled for AI use." },
+            { "score": 1, "label": "Raw data exists but is unlabelled, scattered and of unknown quality." },
+            { "score": 2, "label": "One domain curated to usable quality; no rights review." },
+            { "score": 3, "label": "Several domains curated, with rights and provenance checked." },
+            { "score": 4, "label": "Broad, clean, expert-labelled coverage across the business; synthetic data used only as padding." },
+            { "score": 5, "label": "Above, plus continuously refreshed and already proven to lift model performance in production." } ],
+          "penalty": { "condition": "core fine-tuning data is predominantly synthetic", "deduct": 2, "source": "document", "cite": "Shumailov et al., Nature 631:755 (2024) — model collapse" } },
+        { "id": "data.residency", "name": "Residency and legal regime", "max": 3, "source": "authored",
+          "question": "Where is your data stored and processed, and how exposed is it to the US CLOUD Act?",
+          "anchors": [
+            { "score": 0, "label": "Unknown or default US regions. No SCCs reviewed." },
+            { "score": 1, "label": "EU regions on US-owned providers. CLOUD Act exposure unmitigated." },
+            { "score": 2, "label": "EU regions, SCCs in place, Data Act Ch. VII compatibility assessed." },
+            { "score": 3, "label": "Sensitive classes on EU-jurisdiction providers beyond extraterritorial reach, or protected by hardware-level encryption." } ] },
+        { "id": "data.instruction", "name": "Instruction and evaluation data", "max": 1, "source": "authored",
+          "question": "Do you own human-preference pairs and domain benchmarks of your own?",
+          "anchors": [
+            { "score": 0, "label": "No. Evaluation relies on public benchmarks or vibes." },
+            { "score": 1, "label": "Yes. Own preference data and a domain-specific benchmark used in decisions." } ] },
+        { "id": "data.notrain", "name": "No-train and data-rights discipline", "max": 2, "source": "document",
+          "question": "How strong are your contractual terms with model providers?",
+          "anchors": [
+            { "score": 0, "label": "Standard terms accepted. No no-train clause." },
+            { "score": 1, "label": "No-train and retention clauses in the main contracts." },
+            { "score": 2, "label": "Full set: no-train, zero/30-day retention, EU-only processing, named subprocessors, audit rights (SOC 2 Type II or DORA Art. 30 on-site), ownership and deletion of fine-tune artefacts, derived telemetry and embeddings covered by the same terms." } ] },
+        { "id": "data.egress", "name": "Data-egress boundary control", "max": 2, "source": "document",
+          "$comment": "Preserved verbatim from the v0.5.7 corporate guide (then Document 3), Pillar 1 Data, 'Data-egress boundary control'. v0.7.1 compresses this explicit 0-2 ladder into a one-line 'evidence expected' cell; regenerating from v0.7.1 alone would silently demote this from a published anchor set to an authored one, so it is kept byte-identical rather than dropped.",
+          "question": "What proprietary data actually leaves your boundary at inference time?",
+          "anchors": [
+            { "score": 0, "label": "Staff send arbitrary data to public models. No classification, no gateway." },
+            { "score": 1, "label": "A data-classification policy and a central AI gateway with logging route data by sensitivity." },
+            { "score": 2, "label": "Automated redaction/DLP strips PII, secrets and code before egress, and the most sensitive classes never leave (in-VPC, on-prem or confidential compute)." } ],
+          "dependencyType": "bottleneck" },
+        { "id": "data.ip", "name": "IP and trade-secret exposure", "max": 1, "source": "document",
+          "$comment": "Preserved verbatim from the v0.5.7 corporate guide (then Document 3), Pillar 1 Data, 'IP and trade-secret exposure'. v0.7.1 compresses this explicit 0-1 ladder into a one-line 'evidence expected' cell; regenerating from v0.7.1 alone would silently demote this from a published anchor set to an authored one, so it is kept byte-identical rather than dropped. It is now also [R] in the axis mapping below (ruling 3, spec §2) — v0.5.7 said it 'sits slightly apart from the two axes'; v0.7.1 tags all 38 sub-indicators, superseding that.",
+          "question": "Is high-sensitivity IP kept out of external model calls?",
+          "anchors": [
+            { "score": 0, "label": "No IP-specific controls." },
+            { "score": 1, "label": "Sensitive-IP classes hard-blocked from, or access-scoped within, external calls, with leakage monitoring." } ] }
+      ]
+    },
+    {
+      "id": "models", "n": 2, "name": "Models", "weight": 16,
+      "summary": "Three things: whether you spread bets across providers, whether you can fine-tune on your own data, and whether you have a model you can run yourself when access is interrupted.",
+      "ladder": [
+        { "level": "L0", "anchor": 0,  "description": "Entirely on frontier APIs with no fallback. CLOUD Act and Version Deadlock exposure." },
+        { "level": "L1", "anchor": 4,  "description": "On-prem open-weights model as fallback. Physical control, no fine-tune capability." },
+        { "level": "L2", "anchor": 11, "description": "Product-level fine-tune on open weights. Fine-tune capability plus open fallback. The realistic target for most firms." },
+        { "level": "L3", "anchor": 13, "description": "Training domain-specific models from scratch. Justified only for very specialised use cases at scale." },
+        { "level": "L4", "anchor": 16, "description": "Foundation-model builder. Not itself assessed on AI-SAF-C." } ],
+      "scoringRule": "The ladder anchors the level; points are earned through the sub-criteria, which sum to 16, with the level anchor as reference.",
+      "subIndicators": [
+        { "id": "models.portfolio", "name": "Portfolio and jurisdiction diversification", "max": 5, "source": "authored",
+          "$comment": "Rescored per ruling 1 (spec §2): the v0.7.1 corporate guide states 'the sub-indicator therefore scores legal regimes, not logos ... A portfolio of three US providers scores at most 2 of 5; provider count within a class adds at most 1 further point.' The document publishes this cap, not a full ladder, so the anchor wording below remains authored and stays flagged for author sign-off — only the cap itself is taken verbatim from the source.",
+          "question": "Across how many distinct provider-jurisdiction classes — US-jurisdiction frontier APIs, EU-jurisdiction providers, self-hosted open weights — does real production traffic run?",
+          "anchors": [
+            { "score": 0, "label": "One provider, one jurisdiction class, no fallback." },
+            { "score": 1, "label": "A second provider exists within the same single jurisdiction class, but holds no real traffic." },
+            { "score": 2, "label": "Multiple providers within a single jurisdiction class, carrying a genuine active split — the ceiling for any portfolio confined to one jurisdiction, however many providers sit inside it." },
+            { "score": 3, "label": "A second jurisdiction class is live and carrying real traffic (for example, a US-jurisdiction frontier API alongside an EU-jurisdiction provider, or alongside self-hosted open weights)." },
+            { "score": 4, "label": "All three jurisdiction classes running with real traffic: a US-jurisdiction frontier API, an EU-jurisdiction provider, and self-hosted open weights." },
+            { "score": 5, "label": "Above, with quarterly shadow-deployment testing exercising a secondary jurisdiction class." } ] },
+        { "id": "models.finetune", "name": "Fine-tune capability", "max": 5, "source": "authored",
+          "question": "Can you adapt a model to your domain, and have you?",
+          "anchors": [
+            { "score": 0, "label": "No. Prompting only." },
+            { "score": 1, "label": "Provider-hosted fine-tuning tried once, nothing in production." },
+            { "score": 2, "label": "One fine-tuned model in production, provider-hosted." },
+            { "score": 3, "label": "In-house adaptation of open weights; one model live." },
+            { "score": 4, "label": "Several fine-tuned models live, with a repeatable pipeline." },
+            { "score": 5, "label": "Above, with owned adapters, evaluation gates and a retraining schedule." } ] },
+        { "id": "models.fallback", "name": "Open-weights fallback", "max": 4, "source": "authored",
+          "question": "If frontier access stopped today, how fast could you switch, and to what?",
+          "anchors": [
+            { "score": 0, "label": "No fallback." },
+            { "score": 1, "label": "A model downloaded and stored. Never run in anger." },
+            { "score": 2, "label": "Self-hosted instance running, idle. Recovery time unknown." },
+            { "score": 3, "label": "Self-hosted instance carrying some real traffic daily; RTO estimated." },
+            { "score": 4, "label": "Actively operated on-prem or in-VPC, kept current, tested RTO under 72 hours." } ] },
+        { "id": "models.reasoning", "name": "Reasoning usage", "max": 2, "source": "authored",
+          "question": "Are reasoning models used where the task warrants it?",
+          "anchors": [
+            { "score": 0, "label": "Not used, or used indiscriminately without cost/latency awareness." },
+            { "score": 1, "label": "Used in some workflows, chosen ad hoc." },
+            { "score": 2, "label": "Deliberate routing: reasoning models on tasks that benefit, measured against cheaper alternatives." } ] }
+      ]
+    },
+    {
+      "id": "infrastructure", "n": 3, "name": "Infrastructure and energy", "weight": 14,
+      "summary": "Which provider, under whose law, how much compute you run yourself, and whether confidential computing is in use.",
+      "subIndicators": [
+        { "id": "infra.cloud", "name": "Cloud choice and jurisdiction", "max": 5, "source": "authored",
+          "question": "Which provider carries your AI workloads, and is the choice documented?",
+          "anchors": [
+            { "score": 0, "label": "US hyperscaler, default region, no strategy." },
+            { "score": 1, "label": "US hyperscaler, EU region, no written rationale." },
+            { "score": 2, "label": "EU region plus a documented jurisdiction strategy (Azure EU Data Boundary or equivalent)." },
+            { "score": 3, "label": "AWS European Sovereign Cloud or equivalent EU-operated offering for sensitive workloads." },
+            { "score": 4, "label": "SecNumCloud 3.2-qualified provider (OVHcloud, Outscale, Scaleway, S3NS) for sensitive workloads." },
+            { "score": 5, "label": "Above, with workloads tiered by sensitivity across providers and the mapping documented and reviewed." } ] },
+        { "id": "infra.gpu", "name": "On-prem / in-VPC GPU", "max": 4, "source": "authored",
+          "question": "How much accelerator capacity do you control directly?",
+          "anchors": [
+            { "score": 0, "label": "None. Fully API-based." },
+            { "score": 1, "label": "A development cluster only." },
+            { "score": 2, "label": "Reserved cloud instances in your own VPC serving some production." },
+            { "score": 3, "label": "Substantial owned or dedicated capacity, measured in H100-equivalents." },
+            { "score": 4, "label": "Enough owned or dedicated capacity to carry critical workloads alone, with a T+3 capacity projection." } ] },
+        { "id": "infra.network", "name": "Network and backup independence", "max": 2, "source": "authored",
+          "question": "Multi-region, multi-vendor, and has failover been tested?",
+          "anchors": [
+            { "score": 0, "label": "Single region, single vendor, untested DR." },
+            { "score": 1, "label": "Multi-region on one vendor; DR runbooks written." },
+            { "score": 2, "label": "Multi-region and multi-vendor, with DR runbooks tested within the last 12 months." } ] },
+        { "id": "infra.tee", "name": "Confidential-computing readiness", "max": 3, "source": "authored",
+          "question": "Do regulated workloads run inside attested trusted execution environments?",
+          "anchors": [
+            { "score": 0, "label": "Not evaluated." },
+            { "score": 1, "label": "Evaluated; HSM-based key management in place." },
+            { "score": 2, "label": "TEE (Intel TDX, AMD SEV-SNP, NVIDIA CC) piloted on at least one regulated workload." },
+            { "score": 3, "label": "TEE in production on regulated workloads, with attestation verified and integrated into HSM key release." } ] }
+      ]
+    },
+    {
+      "id": "hardware", "n": 4, "name": "Hardware architecture", "weight": 10,
+      "summary": "Guaranteed capacity for a crunch, reliance on a single silicon vendor, and whether a switch is planned.",
+      "subIndicators": [
+        { "id": "hw.reserved", "name": "Reserved GPU capacity", "max": 4, "source": "authored",
+          "question": "How much capacity is contractually locked in beyond the next quarter?",
+          "anchors": [
+            { "score": 0, "label": "On-demand only." },
+            { "score": 1, "label": "Short-term commitments under 12 months." },
+            { "score": 2, "label": "12-month reserved capacity, sized to current load." },
+            { "score": 3, "label": "Multi-year reserved capacity, sized in H100-equivalents." },
+            { "score": 4, "label": "Above, with headroom for a demand shock and a T+3 projection." } ] },
+        { "id": "hw.vendor", "name": "Vendor diversification", "max": 4, "source": "authored",
+          "question": "How many silicon families carry production traffic?",
+          "anchors": [
+            { "score": 0, "label": "NVIDIA only, no alternative evaluated." },
+            { "score": 1, "label": "NVIDIA only; an alternative has been benchmarked." },
+            { "score": 2, "label": "A second family (AMD, TPU, Trainium) running in staging." },
+            { "score": 3, "label": "Production traffic on at least two families." },
+            { "score": 4, "label": "Above, with a meaningful split and a portable workload definition." } ] },
+        { "id": "hw.migration", "name": "Migration plan under Version Deadlock", "max": 2, "source": "authored",
+          "question": "If an export-control change cut your accelerator access, what happens?",
+          "anchors": [
+            { "score": 0, "label": "No plan." },
+            { "score": 1, "label": "A documented plan exists, untested." },
+            { "score": 2, "label": "Documented and rehearsed, with a measured fallback capacity and timeline." } ] }
+      ]
+    },
+    {
+      "id": "manufacturing", "n": 5, "name": "Manufacturing", "weight": 1,
+      "summary": "A company that does not build foundation models cannot really score here. One point for demonstrated supply-chain awareness.",
+      "subIndicators": [
+        { "id": "mfg.awareness", "name": "Supply-chain awareness", "max": 1, "source": "document",
+          "question": "Does silicon supply-chain reality feed your buying decisions?",
+          "anchors": [
+            { "score": 0, "label": "No. Capacity assumed available on demand." },
+            { "score": 1, "label": "Yes. Advanced-packaging (CoWoS) and HBM constraints, and foundry capacity risk, inform procurement timing and commitments." } ] }
+      ]
+    },
+    {
+      "id": "software", "n": 6, "name": "Software stack", "weight": 10,
+      "summary": "Worth more for firms than for states, because software lock-in bites in everyday work.",
+      "subIndicators": [
+        { "id": "sw.cuda", "name": "CUDA exposure", "max": 3, "source": "authored",
+          "question": "What share of production workloads runs only on CUDA?",
+          "anchors": [
+            { "score": 0, "label": "Effectively all, and no alternative has been tried." },
+            { "score": 1, "label": "Most, but the dependency is understood and documented." },
+            { "score": 2, "label": "Significant share portable; ROCm or an alternative validated in test." },
+            { "score": 3, "label": "Majority of production workloads run unchanged on non-CUDA silicon." } ] },
+        { "id": "sw.frameworks", "name": "Training-framework diversification", "max": 2, "source": "authored",
+          "question": "Is your training stack tied to one framework, and are runs reproducible?",
+          "anchors": [
+            { "score": 0, "label": "One framework, no reproducibility discipline." },
+            { "score": 1, "label": "One framework, with pinned environments and reproducible runs." },
+            { "score": 2, "label": "More than one framework in use, with reproducibility enforced." } ] },
+        { "id": "sw.runtime", "name": "Inference-runtime diversification", "max": 2, "source": "authored",
+          "question": "Which serving runtimes are you able to deploy on?",
+          "anchors": [
+            { "score": 0, "label": "One vendor-specific runtime, or an unsupported one (TGI)." },
+            { "score": 1, "label": "One portable open runtime (vLLM, SGLang, llama.cpp)." },
+            { "score": 2, "label": "More than one runtime validated, and switching has been exercised." } ] },
+        { "id": "sw.mlops", "name": "MLOps lock-in", "max": 2, "source": "authored",
+          "question": "Could you move your pipelines to another platform?",
+          "anchors": [
+            { "score": 0, "label": "Fully inside one vendor's managed ML platform." },
+            { "score": 1, "label": "Partly portable; open tooling (MLflow, Kubeflow, W&B) alongside vendor services." },
+            { "score": 2, "label": "Vendor-agnostic deployment; portability tested, not assumed." } ] },
+        { "id": "sw.oss", "name": "Open-source contribution", "max": 1, "source": "authored",
+          "question": "Do you contribute upstream to the projects you depend on?",
+          "anchors": [
+            { "score": 0, "label": "Consumption only." },
+            { "score": 1, "label": "Merged upstream contributions to projects in your critical path." } ] }
+      ]
+    },
+    {
+      "id": "humanCapital", "n": 7, "name": "Human capital", "weight": 13,
+      "summary": "The pillar with the biggest knock-on effect: improving here raises the payoff from every other investment.",
+      "subIndicators": [
+        { "id": "hc.engineers", "name": "AI-literate engineer ratio", "max": 4, "source": "authored",
+          "question": "What share of your engineers actively work with AI tooling on real jobs?",
+          "anchors": [
+            { "score": 0, "label": "Under 10%, or not measured." },
+            { "score": 1, "label": "10-25%." },
+            { "score": 2, "label": "25-50%." },
+            { "score": 3, "label": "50-75%, measured by actual usage rather than course completion." },
+            { "score": 4, "label": "Over 75%, measured by voluntary use on real work in the last 30 days." } ] },
+        { "id": "hc.specialists", "name": "ML/AI specialists", "max": 3, "source": "authored",
+          "question": "How deep is your specialist bench?",
+          "anchors": [
+            { "score": 0, "label": "None on staff." },
+            { "score": 1, "label": "One or two individuals; single points of failure." },
+            { "score": 2, "label": "A specialist team with cover for key roles." },
+            { "score": 3, "label": "Senior ML engineers and researchers across more than one team, with succession cover." } ] },
+        { "id": "hc.programme", "name": "AI Champions / enablement program", "max": 3, "source": "authored",
+          "question": "Is there a formal cross-functional enablement programme?",
+          "anchors": [
+            { "score": 0, "label": "None." },
+            { "score": 1, "label": "Ad hoc training, no structure." },
+            { "score": 2, "label": "A named programme with a budget and identified champions per business line." },
+            { "score": 3, "label": "A mature programme with tracked outcomes and a delivery pipeline into production." } ] },
+        { "id": "hc.retention", "name": "Retention against brain drain", "max": 2, "source": "authored",
+          "question": "Do you track and act on AI-staff retention?",
+          "anchors": [
+            { "score": 0, "label": "Not tracked separately." },
+            { "score": 1, "label": "Tracked; compensation benchmarked." },
+            { "score": 2, "label": "Tracked, benchmarked, with retention at or above market and clear career paths." } ] },
+        { "id": "hc.literacy", "name": "AI literacy in non-tech staff", "max": 1, "source": "authored",
+          "question": "Does AI literacy reach beyond engineering?",
+          "anchors": [
+            { "score": 0, "label": "No, or training exists on paper only." },
+            { "score": 1, "label": "Formal training delivered and internal assistants adopted across functions (also an AI Act Art. 4 duty)." } ] }
+      ]
+    },
+    {
+      "id": "regulatory", "n": 8, "name": "Regulatory (compliance)", "weight": 12,
+      "summary": "For firms this measures how thoroughly you follow rules — the exact inverse of the national variant, where it measures power to make them.",
+      "subIndicators": [
+        { "id": "reg.aiact", "name": "AI Act conformity posture", "max": 4, "source": "authored",
+          "question": "How far through AI Act readiness are you, against the August 2026 deadline?",
+          "anchors": [
+            { "score": 0, "label": "No inventory of AI systems." },
+            { "score": 1, "label": "Inventory complete; risk classification not started." },
+            { "score": 2, "label": "Risk classification complete (Art. 6)." },
+            { "score": 3, "label": "Technical documentation (Art. 11 / Annex IV) and FRIAs (Art. 27) complete for high-risk systems." },
+            { "score": 4, "label": "Above, plus EU database registration, post-market monitoring (Art. 72) and incident reporting (Art. 73) operating." } ] },
+        { "id": "reg.gdpr", "name": "DPIA + GDPR + Data Act compliance", "max": 2, "source": "authored",
+          "question": "Are DPIAs, lawful basis and transfer mechanisms in order for AI processing?",
+          "anchors": [
+            { "score": 0, "label": "AI processing not covered by existing DPIAs." },
+            { "score": 1, "label": "DPIAs updated for AI; lawful basis documented; SCCs in place." },
+            { "score": 2, "label": "Above, plus Data Act Ch. VII compatibility assessed for third-country access risk." } ] },
+        { "id": "reg.mrm", "name": "MRM (SR 11-7 equivalent)", "max": 3, "source": "authored",
+          "question": "How disciplined is model validation and monitoring?",
+          "anchors": [
+            { "score": 0, "label": "No model inventory." },
+            { "score": 1, "label": "Inventory maintained; validation informal." },
+            { "score": 2, "label": "Documented validation and ongoing monitoring for material models." },
+            { "score": 3, "label": "Above, plus challenger models and an independent validation function." } ] },
+        { "id": "reg.iso", "name": "ISO 42001 certification", "max": 2, "source": "authored",
+          "question": "Where are you on ISO/IEC 42001?",
+          "anchors": [
+            { "score": 0, "label": "Not pursued." },
+            { "score": 1, "label": "Gap analysis and Statement of Applicability drafted; certification in progress." },
+            { "score": 2, "label": "Active certification with a complete SoA and audit evidence." } ] },
+        { "id": "reg.dora", "name": "DORA readiness (financial)", "max": 1, "source": "authored",
+          "applicability": "financial sector; if out of scope, score against the closest sector resilience regime",
+          "question": "Is AI covered by your ICT risk management and third-party register?",
+          "anchors": [
+            { "score": 0, "label": "AI providers absent from the third-party register." },
+            { "score": 1, "label": "AI providers registered, ICT risk assessed, incident reporting covers AI failures." } ] }
+      ]
+    },
+    {
+      "id": "culture", "n": 9, "name": "Culture and operating model", "weight": 10,
+      "summary": "Five points governance, five points practice. The even split is deliberate: governance without practice produces policies people route around; practice without governance produces firms that discover accountability only after a failure.",
+      "corporateOnly": true,
+      "subIndicators": [
+        { "id": "cul.committee", "name": "AI ethics / model-risk committee", "max": 3, "source": "document",
+          "question": "Does a committee exist, how senior is it, and what does it cover?",
+          "anchors": [
+            { "score": 0, "label": "No committee." },
+            { "score": 1, "label": "A committee exists at working level; meets irregularly." },
+            { "score": 2, "label": "Executive-sponsored, meets on a schedule, covers most AI systems." },
+            { "score": 3, "label": "Chaired at board or top-executive level; meets monthly or on demand; tied into risk and audit; keeps a full risk-ranked model list." } ] },
+        { "id": "cul.mrm", "name": "Written model-risk management", "max": 2, "source": "document",
+          "question": "Is there a written system for checking, monitoring and retiring models?",
+          "anchors": [
+            { "score": 0, "label": "No written policy." },
+            { "score": 1, "label": "A written policy covering validation and monitoring." },
+            { "score": 2, "label": "A full system: documented checks for every live model, ongoing monitoring, a set retirement/retraining schedule, and a properly staffed independent validation team." } ] },
+        { "id": "cul.incident", "name": "Incident handling", "max": 2, "source": "document",
+          "question": "How well would you handle an AI-specific incident?",
+          "anchors": [
+            { "score": 0, "label": "No AI-specific process." },
+            { "score": 1, "label": "Written AI playbooks and rollback procedures; not rehearsed." },
+            { "score": 2, "label": "A rehearsed response including mock-attack drills, tied into wider resilience planning, rollback tested, near-miss reporting treated as normal." } ] },
+        { "id": "cul.speed", "name": "Rollout speed", "max": 1, "source": "document",
+          "question": "How long from picking a model to live use, and is it tracked?",
+          "anchors": [
+            { "score": 0, "label": "Over six months, or not tracked." },
+            { "score": 1, "label": "Three months or less, against a stated target." } ] },
+        { "id": "cul.experiment", "name": "Disciplined experimenting", "max": 2, "source": "document",
+          "question": "Do evaluation results decide what ships?",
+          "anchors": [
+            { "score": 0, "label": "No systematic testing setup." },
+            { "score": 1, "label": "Evaluation harnesses exist; results are advisory." },
+            { "score": 2, "label": "Domain-specific benchmarks, version-comparison tooling wired into rollout, results gate what goes live, experimentation is routine." } ] }
+      ]
+    }
+  ],
+
+  "modifiers": [
+    { "id": "scaleDiscount", "name": "Scale discount", "source": "document",
+      "rule": "For enterprises under 500 employees, the Data, Human Capital and Culture raw scores are multiplied by 0.85; from 500 to 2,000 employees, by 0.92; above 2,000, no discount.",
+      "appliesTo": ["data", "humanCapital", "culture"],
+      "$comment": "Both v0.5.7 and v0.7.1 state three tiers; Task 1 of this migration added the missing 500-2,000 tier as data (in `tiers`, below) alongside a legacy `factor`/`trigger` pair that described tier one only, kept so the then-shipped single-tier scorer kept working unchanged. Task 3 retired that legacy pair once scorePillars/HeadcountBand/the assessment's headcount question were all rewritten to read `tiers` directly: HeadcountBand is now 'under500' | '500to2000' | 'over2000', and `tiers` below is the sole, authoritative source for both the discount factor and the headcount question's options — no component may hardcode a boundary or a factor.",
+      "tiers": [
+        { "band": "under500", "trigger": "headcount < 500", "factor": 0.85 },
+        { "band": "500to2000", "trigger": "500 <= headcount < 2000", "factor": 0.92 },
+        { "band": "over2000", "trigger": "headcount >= 2000", "factor": 1.0 }
+      ],
+      "rationale": "Dataset scale, bench depth and formal governance all track organisational size; process discipline does not." }
+  ],
+
+  "axes": {
+    "$comment": "Resilience and autonomy are read from the same sub-indicator answers. Unlike v0.5.7, this mapping is no longer authored for the web tool: v0.7.1 tags every one of the 38 sub-indicators [R] or [A] in its own pillar tables (Document 2, Pillar tables 8-17), and this weightedFrom split mirrors that published tagging exactly — resilience sums to 60 points, autonomy to 40, together covering all 38 with no overlap (see the rubric.test.ts invariant). Six ids move A -> R relative to the tool's old authored mapping (data.residency, data.notrain, infra.cloud, infra.tee, sw.frameworks, reg.mrm); the 13 sub-indicators the old mapping left unweighted are now assigned per the document's tables; sw.opensource in the document's own row naming resolves to this rubric's sw.oss (same pillar, same 1 point, 'Open-source contribution') — recorded here because the id in the source table does not literally match this rubric's id. The framework defines the axis readings as point subtotals that reconcile to the headline (R + A = score, before rounding, matching Framework §1.1's own '68 (R 40 / A 28)' shape), not the two independent 0-100 percentages this tool derived pre-migration; src/lib/axes.ts computes exactly that point-subtotal identity (slice 4, Task 2), rounding resilience directly and defining autonomy as whatever the headline leaves once resilience is subtracted, so the two always reconcile exactly rather than each being independently rounded.",
+    "resilience": { "question": "What still works if a supplier cuts us off tomorrow?",
+      "weightedFrom": ["data.residency", "data.notrain", "data.egress", "data.ip", "models.portfolio", "models.fallback", "infra.cloud", "infra.gpu", "infra.network", "infra.tee", "hw.reserved", "hw.vendor", "hw.migration", "mfg.awareness", "sw.cuda", "sw.frameworks", "sw.runtime", "sw.mlops", "hc.retention", "reg.mrm", "reg.dora", "cul.incident", "cul.speed"] },
+    "autonomy": { "question": "Who decides our technology path?",
+      "weightedFrom": ["data.corpus", "data.instruction", "models.finetune", "models.reasoning", "sw.oss", "hc.engineers", "hc.specialists", "hc.programme", "hc.literacy", "reg.aiact", "reg.gdpr", "reg.iso", "cul.committee", "cul.mrm", "cul.experiment"] }
+  },
+
+  "versionDeadlockStates": {
+    "$comment": "Classification rule is AUTHORED for the web tool and needs author sign-off against Framework Document 1 §3.5.",
+    "states": [
+      { "key": "recoverable", "label": "Recoverable", "line": "You could re-establish your own upgrade path within a normal planning cycle." },
+      { "key": "slowClock", "label": "Slow-clock", "line": "Nothing breaks today, but the ability to reach the next version is quietly eroding." },
+      { "key": "vulnerable", "label": "Vulnerable but recoverable", "line": "A supplier change would hurt badly, and recovery would be expensive but possible." },
+      { "key": "terminal", "label": "Terminal", "line": "There is no realistic route back to controlling your own upgrade path." } ]
+  },
+
+  "confidence": {
+    "$comment": "Asked once per pillar. Drives the +/- band on the headline score and the 'how much to trust this' line in the report.",
+    "levels": [
+      { "key": "verified", "label": "Verified", "hint": "I checked a contract, a register, a dashboard or a document.", "uncertainty": 0.25 },
+      { "key": "estimated", "label": "Estimated", "hint": "I know this area well but did not check a source.", "uncertainty": 1.0 },
+      { "key": "guessed",  "label": "Guessed",  "hint": "I am not the right person to answer this.", "uncertainty": 2.0 } ]
+  },
+
+  "scoreCitationFormat": "AI-SAF-C v0.7.1 · {score} (R {resilience} / A {autonomy}) · self-assessed, {confidenceLabel} · {ISO8601 date}"
+}

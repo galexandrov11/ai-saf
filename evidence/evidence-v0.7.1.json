@@ -1,0 +1,1532 @@
+[
+  {
+    "slug": "nexperia-state-supervision-and-supply-standoff-september-2025-ongoing",
+    "title": "Nexperia state supervision and supply standoff (September 2025 → ongoing) [Added v0.7.1]",
+    "date": "2025-09",
+    "dateDisplay": "September 2025 → ongoing",
+    "part": "C",
+    "theme": "Sovereignty incidents — manufacturing & critical materials",
+    "isIncident": true,
+    "claim": "In September 2025 the Netherlands invoked the Goods Availability Act to place Nexperia — the Nijmegen-headquartered semiconductor maker majority-owned by China’s Wingtech — under temporary state supervision on national-security grounds. China responded with export controls on China-produced Nexperia chips, disrupting automotive production worldwide from October 2025. By March 2026 the Dutch and Chinese arms were operating as separate, often hostile entities (on 3 March 2026 Nexperia B.V. cut Chinese staff off from global IT systems). Partial de-escalation followed — China walked back export controls and The Hague relinquished oversight — but the entities had not reunited as of mid-2026. A textbook two-directional sovereignty incident: European assertion of control over a chip asset, answered by Chinese leverage over the downstream supply chain.",
+    "sources": [
+      {
+        "citation": "Z2Data, “The Nexperia Chip Crisis, Explained”",
+        "url": "https://www.z2data.com/insights/the-nexperia-chip-crisis-explained/"
+      },
+      {
+        "citation": "Jill Goldenziel, “The Dutch Seized a Chinese Chipmaker. Supply Chain Chaos Has Just Begun,” Forbes, 31 December 2025",
+        "url": "https://www.forbes.com/sites/jillgoldenziel/2025/12/31/the-dutch-seized-a-chinese-chipmaker-supply-chain-chaos-has-just-begun/"
+      },
+      {
+        "citation": "Diplomat Magazine, “China–Netherlands Technology Dispute over Nexperia Enters a Negotiated Phase,” 6 January 2026",
+        "url": "https://diplomatmagazine.eu/2026/01/06/china-netherlands-technology-dispute-over-nexperia-enters-a-negotiated-phase/"
+      }
+    ],
+    "referencedIn": [
+      "AI-SAF-N Manufacturing pillar",
+      "State of Play §4."
+    ],
+    "pillars": [
+      "manufacturing"
+    ],
+    "note": "This incident predates the April 2026 snapshot but was absent from earlier Evidence Base revisions; added in v0.7.1."
+  },
+  {
+    "slug": "china-rare-earth-enforcement-wave-june-july-2026",
+    "title": "China rare-earth enforcement wave (June – July 2026) [Added v0.7.1]",
+    "date": "2026-07",
+    "dateDisplay": "June – July 2026",
+    "part": "C",
+    "theme": "Sovereignty incidents — manufacturing & critical materials",
+    "isIncident": true,
+    "claim": "Despite the November 2025 pause, enforcement stayed active through 2026. On 22 June 2026 MOFCOM placed 10 US companies under new export restrictions; by 24 July it had blocked dual-use shipments to 14 EU firms. Announcement No. 26 (24 June 2026) formalised the handling of violations involving strategic-mineral dual-use controls. Two Japanese nationals were detained in Dalian (May 2026) over alleged rare-earth-related smuggling — among the first foreign-national detentions tied to these controls. The IEA warned that full enforcement could put $6.5 trillion of downstream production at risk.",
+    "sources": [
+      {
+        "citation": "Morgan Lewis, “Recent China Export Control Actions Signal Active Enforcement for Rare Earths and Strategic Minerals,” July 2026",
+        "url": "https://www.morganlewis.com/pubs/2026/07/recent-china-export-control-actions-signal-active-enforcement-for-rare-earths-and-strategic-minerals"
+      },
+      {
+        "citation": "China Briefing, “China’s Rare Earth Export Controls — Impact on Businesses and Industries”",
+        "url": "https://www.china-briefing.com/news/chinas-rare-earth-export-controls-impacts-on-businesses/"
+      }
+    ],
+    "referencedIn": [
+      "AI-SAF-N Manufacturing pillar (critical-minerals sub-indicator)",
+      "State of Play §4."
+    ],
+    "pillars": [
+      "manufacturing"
+    ]
+  },
+  {
+    "slug": "eurohpc-ai-gigafactories-call-30-july-2026",
+    "title": "EuroHPC AI Gigafactories call (30 July 2026) [Added v0.7.1]",
+    "date": "2026-07-30",
+    "dateDisplay": "30 July 2026",
+    "part": "D",
+    "theme": "Sovereign stack responses",
+    "isIncident": true,
+    "claim": "The EuroHPC Joint Undertaking opened the formal call for seven AI Gigafactories on 30 July 2026: €10 billion in public funding intended to mobilise at least €20 billion more in private investment, each site to hold at least 100,000 advanced AI chips. Bids close 12 November 2026; awards are expected in early 2027, with operations targeted about 18 months after selection. Ten member states signalled hosting interest (Germany, Italy, France, Poland, Czechia, Denmark, Finland, Greece, Portugal, Spain).",
+    "sources": [
+      {
+        "citation": "EuroHPC JU, “The EuroHPC Joint Undertaking launches the AI Gigafactories Call,” 30 July 2026",
+        "url": "https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en"
+      },
+      {
+        "citation": "European Commission, “EU launches AI Gigafactories call”",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/eu-launches-ai-gigafactories-call-boost-europes-computing-capacity-and-unlock-more-eu30-billion"
+      },
+      {
+        "citation": "Euronews, 30 July 2026",
+        "url": "https://www.euronews.com/my-europe/2026/07/30/eu-opens-call-for-seven-gigafactories-to-train-next-generation-ai-technologies"
+      }
+    ],
+    "referencedIn": [
+      "AI-SAF-N Infrastructure pillar (Local compute, pooled-capacity crediting)",
+      "Framework §2.4 calibration",
+      "State of Play §2."
+    ],
+    "pillars": [
+      "infrastructure"
+    ]
+  },
+  {
+    "slug": "first-eu-sovereignty-criteria-cloud-procurement-april-2026",
+    "title": "First EU sovereignty-criteria cloud procurement (April 2026) [Added v0.7.1]",
+    "date": "2026-04",
+    "dateDisplay": "April 2026",
+    "part": "D",
+    "theme": "Sovereign stack responses",
+    "isIncident": true,
+    "claim": "The European Commission awarded a €180 million sovereign-cloud contract to four European provider groups (Post Telecom, StackIT, Scaleway, Proximus), reported as the first EU procurement run on explicit sovereignty criteria.",
+    "sources": [
+      {
+        "citation": "Julien Simon, “Two Sovereign Clouds, One Legal Wall,” Medium",
+        "url": "https://julsimon.medium.com/two-sovereign-clouds-one-legal-wall-ff39bcc0432b"
+      }
+    ],
+    "referencedIn": [
+      "AI-SAF-N Infrastructure pillar",
+      "State of Play §2."
+    ],
+    "pillars": [
+      "infrastructure"
+    ],
+    "note": "Secondary sourcing only; verify against the Commission’s award notice before citing in anything published."
+  },
+  {
+    "slug": "eu-ai-act-digital-omnibus-deferral-and-gpai-enforcement-27-july-2-august-2026",
+    "title": "EU AI Act — Digital Omnibus deferral and GPAI enforcement (27 July / 2 August 2026) [Added v0.7.1]",
+    "date": "2026-08-02",
+    "dateDisplay": "27 July / 2 August 2026",
+    "part": "E",
+    "theme": "Regulatory instruments",
+    "isIncident": true,
+    "claim": "The Digital Omnibus on AI (proposed 19 November 2025) entered into force on 27 July 2026, deferring the AI Act’s high-risk obligations: stand-alone Annex III systems to 2 December 2027, and AI embedded in Annex I regulated products to 2 August 2028. The GPAI provisions were not deferred: on 2 August 2026, Article 50 transparency obligations, Commission penalty powers over GPAI providers, and full national market-surveillance authority took effect as originally scheduled.",
+    "sources": [
+      {
+        "citation": "Gibson Dunn, “EU AI Act Omnibus Agreement — Postponed High-Risk Deadlines and Other Key Changes”",
+        "url": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/"
+      },
+      {
+        "citation": "Freshfields, “EU AI Act unpacked #34: The final Digital Omnibus on AI”",
+        "url": "https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/eu-ai-act-unpacked-34-the-final-digital-omnibus-on-ai-key-amendments-to-the-a-102nber"
+      },
+      {
+        "citation": "DLA Piper, “The Digital AI Omnibus: Proposed deferral of high-risk AI obligations”",
+        "url": "https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopments/2026/The-Digital-AI-Omnibus-Proposed-deferral-of-high-risk-AI-obligations-under-the-AI-Act"
+      }
+    ],
+    "referencedIn": [
+      "Framework Part V",
+      "AI-SAF-C Regulatory pillar",
+      "AI-SAF-N Regulatory pillar",
+      "State of Play §6."
+    ],
+    "pillars": [
+      "regulatory"
+    ]
+  },
+  {
+    "slug": "eu-technological-sovereignty-package-cada-and-chips-act-2-0-3-june-2026",
+    "title": "EU Technological Sovereignty Package: CADA and Chips Act 2.0 (3 June 2026) [Added v0.7.1]",
+    "date": "2026-06-03",
+    "dateDisplay": "3 June 2026",
+    "part": "E",
+    "theme": "Regulatory instruments",
+    "isIncident": true,
+    "claim": "On 3 June 2026 the European Commission adopted the Cloud and AI Development Act proposal (COM(2026) 502) and the Chips Act 2.0 proposal (COM(2026) 504). CADA aims to triple EU data-centre capacity within five to seven years, creates data-centre acceleration zones, and establishes a Cloud Sovereignty Framework grading cloud services on four assurance levels — from EU data location (level 1) to full supply-chain control free of third-country interference (level 4) — applicable to public-sector procurement. Chips Act 2.0 targets permitting within 12 months, investment conditions, and “Grand Challenges” including AI chips; the European Court of Auditors projects the EU at ~11.7% of the global chip value chain by 2030 versus the 20% target. Both proposals are in trilogue.",
+    "sources": [
+      {
+        "citation": "European Commission, “Proposal for the Cloud and AI Development Act (CADA)”",
+        "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada"
+      },
+      {
+        "citation": "EUR-Lex COM(2026) 502",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2026%3A502%3AFIN"
+      },
+      {
+        "citation": "Covington, “The EU Cloud and AI Development Act in Depth,” 11 June 2026",
+        "url": "https://www.insideglobaltech.com/2026/06/11/the-eu-cloud-and-ai-development-act-in-depth/"
+      },
+      {
+        "citation": "European Commission, “Proposal for the Chips Act 2.0”",
+        "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-chips-act-20"
+      }
+    ],
+    "referencedIn": [
+      "Framework Part V",
+      "AI-SAF-C Infrastructure pillar",
+      "AI-SAF-N Infrastructure and Manufacturing pillars",
+      "State of Play §2",
+      "§4."
+    ],
+    "pillars": [
+      "infrastructure",
+      "manufacturing"
+    ]
+  },
+  {
+    "slug": "new-delhi-ai-impact-summit-and-declaration-16-21-february-2026",
+    "title": "New Delhi AI Impact Summit and Declaration (16–21 February 2026) [Added v0.7.1 — promoted from Part J]",
+    "date": "2026-02-21",
+    "dateDisplay": "16–21 February 2026",
+    "part": "E",
+    "theme": "Regulatory instruments",
+    "isIncident": true,
+    "claim": "The India AI Impact Summit ran 16–21 February 2026 at Bharat Mandapam, New Delhi, with representatives of 118 countries. The New Delhi Declaration on AI Impact, adopted 18–19 February, was endorsed by 92 countries and international organisations, structured around seven pillars (“Chakras”). Outcomes include the Charter for the Democratic Diffusion of AI, the Global AI Impact Commons, and India’s GPU expansion (20,000 added to an existing 38,000, targeting 100,000 by end-2026).",
+    "sources": [
+      {
+        "citation": "Press Information Bureau (Government of India), “AI Impact Summit 2026 Concludes with Adoption of New Delhi Declaration”",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&v=4&reg=3&lang=2"
+      },
+      {
+        "citation": "Ministry of External Affairs press release",
+        "url": "https://www.mea.gov.in/press-releases.htm?dtl%2F40810%2FAI_Impact_Summit_2026_Concludes_with_Adoption_of_New_Delhi_Declaration="
+      }
+    ],
+    "referencedIn": [
+      "AI-SAF-N Regulatory pillar",
+      "State of Play §6."
+    ],
+    "pillars": [
+      "regulatory"
+    ]
+  },
+  {
+    "slug": "microsoft-france-cloud-act-testimony",
+    "title": "Microsoft France CLOUD Act testimony (10 June 2025)",
+    "date": "2025-06-10",
+    "dateDisplay": "10 June 2025",
+    "part": "A",
+    "theme": "Sovereignty incidents — cloud & data",
+    "isIncident": true,
+    "claim": "Anton Carniaux, Director of Public and Legal Affairs at Microsoft France, testified under oath to a French Senate inquiry into public buying and digital sovereignty that he could not guarantee French citizens’ data held in Microsoft’s EU data centres would never be handed to US authorities without France’s consent. Asked directly, he said “No, I cannot guarantee that.” The law that makes this possible is the US CLOUD Act of 2018.",
+    "sources": [
+      {
+        "citation": "Sénat de la République française, Commission d’enquête sur la commande publique et la souveraineté numérique, Audition d’Anton Carniaux, 10 June 2025",
+        "url": null
+      },
+      {
+        "citation": "Lindsay Clark, “Microsoft exec admits it cannot guarantee data sovereignty,” The Register, 25 July 2025",
+        "url": "https://www.theregister.com/2025/07/25/microsoft_admits_it_cannot_guarantee"
+      },
+      {
+        "citation": "Cristiano Lima-Strong, “Microsoft tells French lawmakers it can’t protect user data from US demands,” SDxCentral, 21 July 2025",
+        "url": "https://www.sdxcentral.com/news/microsoft-tells-french-lawmakers-it-cant-protect-user-data-from-us-demands/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2 (illustrative incident)",
+      "AI-SAF-N Infrastructure pillar",
+      "AI-SAF-C Infrastructure pillar",
+      "Refining §3.3"
+    ],
+    "pillars": [
+      "infrastructure"
+    ]
+  },
+  {
+    "slug": "microsoft-icc-email-block-of-karim-khan",
+    "title": "Microsoft / ICC email block of Karim Khan (February–May 2025)",
+    "date": "2025-05",
+    "dateDisplay": "February–May 2025",
+    "part": "A",
+    "theme": "Sovereignty incidents — cloud & data",
+    "isIncident": true,
+    "claim": "After the US Treasury imposed sanctions in February 2025 on International Criminal Court Chief Prosecutor Karim Khan — in response to ICC investigations into Israeli officials — Khan’s Microsoft email was switched off. The ICC then moved its office and teamwork software to OpenDesk, a free, open-source platform from Germany’s Centre for Digital Sovereignty (ZenDiS). Microsoft has disputed some accounts of how events unfolded.",
+    "sources": [
+      {
+        "citation": "Associated Press reporting, February–May 2025",
+        "url": null
+      },
+      {
+        "citation": "Computer Weekly, “Microsoft’s ICC email block reignites European data sovereignty concerns,” 23 May 2025",
+        "url": "https://www.computerweekly.com/opinion/Microsofts-ICC-email-block-reignites-European-data-sovereignty-concerns"
+      },
+      {
+        "citation": "Xinhua, “Microsoft email block of ICC prosecutor fuels Dutch alarm over US tech dependence,” 20 May 2025",
+        "url": "https://english.news.cn/20250521/4a278fdce8324af59346ecf47ac407c9/c.html"
+      },
+      {
+        "citation": "Lindsay Clark, “Microsoft throws spox under the bus in ICC email flap,” The Register, 18 February 2026",
+        "url": "https://www.theregister.com/2026/02/18/microsoft_asks_uk_parliament_to_correct_record/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-C Infrastructure",
+      "Refining §3.3"
+    ],
+    "pillars": []
+  },
+  {
+    "slug": "meta-llama-multimodal-eu-withdrawal",
+    "title": "Meta Llama multimodal EU withdrawal (18 July 2024)",
+    "date": "2024-07-18",
+    "dateDisplay": "18 July 2024",
+    "part": "A",
+    "theme": "Sovereignty incidents — cloud & data",
+    "isIncident": true,
+    "claim": "Meta said it would not release its upcoming multimodal Llama model (one that handles text, images, and more) in the European Union, blaming “the unpredictable nature of the European regulatory environment.” Its specific complaint was about GDPR duties around using EU users’ data to train AI, and it came after the Irish Data Protection Commission asked Meta to hold off on plans to use public Facebook and Instagram content for training.",
+    "sources": [
+      {
+        "citation": "Ryan Heath, “Scoop: Meta won’t offer future multimodal AI models in EU,” Axios, 17 July 2024",
+        "url": "https://www.axios.com/2024/07/17/meta-future-multimodal-ai-models-eu"
+      },
+      {
+        "citation": "Suhasini Srinivasaragavan, “Meta will not launch multimodal Llama AI model in EU,” Silicon Republic, 18 July 2024",
+        "url": "https://www.siliconrepublic.com/business/meta-llama-3-multimodal-ai-model-llm-eu-europe-launch-delay"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Data pillar",
+      "AI-SAF-N Regulatory pillar",
+      "Refining §3.1"
+    ],
+    "pillars": [
+      "data",
+      "regulatory"
+    ]
+  },
+  {
+    "slug": "apple-intelligence-eu-delay",
+    "title": "Apple Intelligence EU delay (October 2024 → April 2025)",
+    "date": "2025-04",
+    "dateDisplay": "October 2024 → April 2025",
+    "part": "A",
+    "theme": "Sovereignty incidents — cloud & data",
+    "isIncident": true,
+    "claim": "Apple Intelligence features arrived worldwide with iOS 18.1 in October 2024 but were held back for EU users until iOS 18.4 in April 2025, expressly because of the Digital Markets Act’s rules requiring products to work with rivals’ systems.",
+    "sources": [
+      {
+        "citation": "Romain Dillet, “Apple Intelligence is coming to the EU in April 2025,” TechCrunch, 28 October 2024",
+        "url": "https://techcrunch.com/2024/10/28/apple-intelligence-is-coming-to-the-eu-in-april-2025/"
+      },
+      {
+        "citation": "Apple Inc., “The Digital Markets Act’s impacts on EU users,” Apple Newsroom, September 2025",
+        "url": "https://www.apple.com/newsroom/2025/09/the-digital-markets-acts-impacts-on-eu-users/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Data pillar",
+      "Refining §3.1"
+    ],
+    "pillars": [
+      "data"
+    ]
+  },
+  {
+    "slug": "italian-garante-deepseek-ban",
+    "title": "Italian Garante DeepSeek ban (30 January 2025)",
+    "date": "2025-01-30",
+    "dateDisplay": "30 January 2025",
+    "part": "A",
+    "theme": "Sovereignty incidents — cloud & data",
+    "isIncident": true,
+    "claim": "Italy’s data protection authority (the Garante) ordered DeepSeek — Hangzhou DeepSeek AI and Beijing DeepSeek AI — to stop handling Italian users’ personal data after the companies claimed they “did not operate in Italy” and that European rules did not apply. The Garante called the companies’ response “completely insufficient.” The order covered the app-store versions; the website stayed reachable. Authorities in Belgium, Ireland, France, Portugal, and Spain opened their own investigations.",
+    "sources": [
+      {
+        "citation": "Garante per la protezione dei dati personali, press release of 30 January 2025",
+        "url": null
+      },
+      {
+        "citation": "Bird & Bird, “The Garante imposes a definitive limitation on the processing of Italian users’ personal data,” 26 February 2025",
+        "url": "https://www.twobirds.com/en/insights/2025/the-garante-imposes-a-definitive-limitation-on-the-processing-of-italian-users’-personal-data"
+      },
+      {
+        "citation": "Euronews, “DeepSeek AI blocked by Italian authorities,” 31 January 2025",
+        "url": "https://www.euronews.com/next/2025/01/31/deepseek-ai-blocked-by-italian-authorities-as-others-member-states-open-probes"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Regulatory pillar",
+      "Refining §3.8"
+    ],
+    "pillars": [
+      "regulatory"
+    ]
+  },
+  {
+    "slug": "biden-ai-diffusion-rule-trump-rescission",
+    "title": "Biden AI Diffusion Rule / Trump rescission (15 January → 13 May 2025)",
+    "date": "2025-05-13",
+    "dateDisplay": "15 January → 13 May 2025",
+    "part": "B",
+    "theme": "Sovereignty incidents — hardware, export controls, supply chain",
+    "isIncident": true,
+    "claim": "The Biden administration issued the “AI Diffusion Rule” on 15 January 2025 (published in the Federal Register), set to take effect on 15 May 2025. The rule sorted the world into three tiers and capped each country’s imports of advanced chips. On 13 May 2025, two days before it would have kicked in, the Trump administration’s Commerce Department Bureau of Industry and Security (BIS) scrapped it, with Under Secretary Jeffrey Kessler telling BIS enforcement staff not to apply it. At the same time, BIS put out three new guidance documents — on controlling advanced-computing chips, on training AI for weapons-of-mass-destruction uses, and on tactics used to dodge supply-chain controls.",
+    "sources": [
+      {
+        "citation": "US Department of Commerce, BIS, “Department of Commerce Rescinds Biden-Era Artificial Intelligence Diffusion Rule,” 13 May 2025",
+        "url": "https://media.bis.gov/press-release/department-commerce-rescinds-biden-era-artificial-intelligence-diffusion-rule-strengthens-chip-related"
+      },
+      {
+        "citation": "Becca Szkutak, “Trump administration officially rescinds Biden’s AI diffusion rules,” TechCrunch, 13 May 2025",
+        "url": "https://techcrunch.com/2025/05/13/trump-administration-officially-rescinds-bidens-ai-diffusion-rules/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Hardware pillar",
+      "AI-SAF-N Regulatory pillar",
+      "Refining §3.4"
+    ],
+    "pillars": [
+      "hardware",
+      "regulatory"
+    ]
+  },
+  {
+    "slug": "nvidia-h20-amd-mi308-revenue-share-deal",
+    "title": "Nvidia H20 / AMD MI308 revenue-share deal (11 August 2025)",
+    "date": "2025-08-11",
+    "dateDisplay": "11 August 2025",
+    "part": "B",
+    "theme": "Sovereignty incidents — hardware, export controls, supply chain",
+    "isIncident": true,
+    "claim": "President Trump announced that Nvidia would pay the US government 15% of what it earns from selling H20 chips to China, with AMD agreeing to the same 15% on MI308 sales. This was a fundamental shift — from banning these exports to taxing them. In the previous quarter (April 2025), export controls had blocked roughly $2.5 billion of H20 sales to China from showing up in Nvidia’s results.",
+    "sources": [
+      {
+        "citation": "Fortune / Bloomberg, “Nvidia, AMD agree to pay US 15% of China chip sale revenue,” 10 August 2025",
+        "url": "https://fortune.com/2025/08/10/nvidia-amd-chips-h20-mi308-china-sales-revenue-trump-export-license/"
+      },
+      {
+        "citation": "NPR, “Trump says Nvidia will hand the US 15% of its H20 chip sales to China,” 11 August 2025",
+        "url": "https://www.npr.org/2025/08/11/nx-s1-5498689/trump-nvidia-h20-chip-sales-china"
+      },
+      {
+        "citation": "Bruno Micheli, “Trump’s Political Tax on Nvidia Chips to China,” American Action Forum, 12 August 2025",
+        "url": "https://www.americanactionforum.org/insight/trumps-political-tax-on-nvidia-chips-to-china/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Hardware pillar",
+      "Refining §3.4"
+    ],
+    "pillars": [
+      "hardware"
+    ]
+  },
+  {
+    "slug": "nvidia-h200-revenue-share-deal",
+    "title": "Nvidia H200 revenue-share deal (8 December 2025)",
+    "date": "2025-12-08",
+    "dateDisplay": "8 December 2025",
+    "part": "B",
+    "theme": "Sovereignty incidents — hardware, export controls, supply chain",
+    "isIncident": true,
+    "claim": "President Trump announced that Nvidia would be allowed to ship H200 chips to approved customers in China, on condition that the US take a 25% cut of the revenue. Chinese President Xi Jinping reportedly responded favourably.",
+    "sources": [
+      {
+        "citation": "Arjun Kharpal, “Trump greenlights Nvidia H200 AI chip sales to China if US gets 25% cut,” CNBC, 8 December 2025",
+        "url": "https://www.cnbc.com/2025/12/08/trump-nvidia-h200-sales-china.html"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Hardware pillar",
+      "Refining §3.4"
+    ],
+    "pillars": [
+      "hardware"
+    ]
+  },
+  {
+    "slug": "crowdstrike-global-outage",
+    "title": "CrowdStrike global outage (19 July 2024)",
+    "date": "2024-07-19",
+    "dateDisplay": "19 July 2024",
+    "part": "B",
+    "theme": "Sovereignty incidents — hardware, export controls, supply chain",
+    "isIncident": true,
+    "claim": "A broken update to CrowdStrike’s Falcon Sensor security software (channel file 291, timestamped 2024-07-19 04:09 UTC) set off what is widely called the largest IT outage in history. About 8.5 million Windows devices — roughly 1% of all Windows machines — crashed, throwing airlines, banks, hospitals, shops, and emergency services into chaos worldwide. Insurers estimated the cost to U.S. Fortune 500 companies at $5.4 billion. Delta Air Lines reported losses of about $500 million and sued CrowdStrike on 25 October 2024. In May 2025, a Georgia judge let Delta press claims of gross negligence, computer trespass, and limited fraud.",
+    "sources": [
+      {
+        "citation": "“2024 CrowdStrike-related IT outages,” Wikipedia (consolidating contemporaneous press coverage)",
+        "url": "https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages"
+      },
+      {
+        "citation": "Microsoft Corporation, “Helping our customers through the CrowdStrike outage,” 20 July 2024",
+        "url": "https://blogs.microsoft.com/blog/2024/07/20/helping-our-customers-through-the-crowdstrike-outage/"
+      },
+      {
+        "citation": "Sean Michael Kerner, “CrowdStrike outage explained: What caused it and what’s next,” TechTarget, updated September 2024",
+        "url": "https://www.techtarget.com/whatis/feature/Explaining-the-largest-IT-outage-in-history-and-whats-next"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Software pillar",
+      "AI-SAF-C Software pillar",
+      "Refining §3.6"
+    ],
+    "pillars": [
+      "software"
+    ]
+  },
+  {
+    "slug": "nvidia-vera-rubin-platform",
+    "title": "NVIDIA Vera Rubin platform (CES 2026, 5 January 2026)",
+    "date": "2026-01-05",
+    "dateDisplay": "CES 2026, 5 January 2026",
+    "part": "B",
+    "theme": "Sovereignty incidents — hardware, export controls, supply chain",
+    "isIncident": true,
+    "claim": "NVIDIA formally launched the Vera Rubin platform at CES 2026. Rubin GPU: 336 billion transistors (two-reticle design), 50 PFLOPS NVFP4 inference, 35 PFLOPS NVFP4 training (vendor figures quoted as 5× and 3.5× Blackwell), 288 GB HBM4, 22 TB/s memory bandwidth. Vera CPU: 88 custom Olympus Arm v9.2 cores with Spatial Multi-Threading (176 threads), 1.5 TB LPDDR5x, NVLink-C2C at 1.8 TB/s. Vera Rubin NVL72 rack: 72 Rubin GPUs and 36 Vera CPUs delivering 3.6 EFLOPS NVFP4 inference and 2.5 EFLOPS NVFP4 training, 20.7 TB HBM4 capacity, 1.6 PB/s HBM bandwidth, 260 TB/s NVLink 6 rack-scale bandwidth. Full production reported Q1 2026; partner availability H2 2026. First cloud deployments announced at AWS, Google Cloud, Microsoft (Fairwater AI superfactories), OCI, CoreWeave, Lambda, Nebius, Nscale. Per-rack price reported in trade press at up to $8.8 million.",
+    "sources": [
+      {
+        "citation": "NVIDIA, “NVIDIA Kicks Off the Next Generation of AI With Rubin,” press release, 5 January 2026",
+        "url": "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer"
+      },
+      {
+        "citation": "NVIDIA Technical Blog, “Inside the NVIDIA Vera Rubin Platform,” 5 January 2026",
+        "url": "https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/"
+      },
+      {
+        "citation": "Tom’s Hardware, “Nvidia launches Vera Rubin NVL72 AI supercomputer at CES,” 5 January 2026",
+        "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-launches-vera-rubin-nvl72-ai-supercomputer-at-ces-promises-up-to-5x-greater-inference-performance-and-10x-lower-cost-per-token-than-blackwell-coming-2h-2026"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Hardware pillar",
+      "Refining §3.4"
+    ],
+    "pillars": [
+      "hardware"
+    ],
+    "note": "The per-rack price and the speed (FLOPS) figures come from NVIDIA itself; independent testing will follow in the second half of 2026."
+  },
+  {
+    "slug": "anthropic-fable-5-mythos-5-access-suspension",
+    "title": "Anthropic Fable 5 / Mythos 5 access suspension (12 June 2026)",
+    "date": "2026-06-12",
+    "dateDisplay": "12 June 2026",
+    "part": "B",
+    "theme": "Sovereignty incidents — hardware, export controls, supply chain",
+    "isIncident": true,
+    "claim": "On 12 June 2026 the US government, citing national-security export-control authority, issued a directive ordering Anthropic to suspend all access to its frontier Fable 5 and Mythos 5 models by any foreign national — whether inside or outside the United States, and including Anthropic’s own foreign-national employees. Anthropic disabled both models for all customers to comply, three days after Fable 5’s public release. Reported triggers were concern that the Mythos-class model could surface restricted cyber-attack and software-vulnerability information (raised after Amazon researchers elicited such output, escalated by CEO Andy Jassy) and suspected access by a China-linked group. The suspension cut off enterprises and governments worldwide overnight and reignited “sovereign AI” calls in Europe and India.",
+    "sources": [
+      {
+        "citation": "Anthropic, “Statement on the US government directive to suspend access to Fable 5 and Mythos 5,” 12 June 2026",
+        "url": "https://www.anthropic.com/news/fable-mythos-access"
+      },
+      {
+        "citation": "Jordan Novet, “Anthropic disables access to Fable 5 and Mythos 5 to comply with government directive,” CNBC, 12 June 2026",
+        "url": "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html"
+      },
+      {
+        "citation": "“US orders Anthropic to disable AI models for all foreign nationals,” Al Jazeera, 13 June 2026",
+        "url": "https://www.aljazeera.com/news/2026/6/13/us-orders-anthropic-to-disable-ai-models-for-all-foreign-nationals"
+      },
+      {
+        "citation": "“How a warning from Amazon led the White House to shut down Anthropic’s Mythos model,” Fortune, 14 June 2026",
+        "url": "https://fortune.com/2026/06/14/how-a-warning-from-amazon-led-the-white-house-to-shut-down-anthropics-mythos-model/"
+      },
+      {
+        "citation": "“US clampdown on Anthropic models sends EU sovereignty surge into overdrive,” The Register, 15 June 2026",
+        "url": "https://www.theregister.com/ai-and-ml/2026/06/15/us-clampdown-on-anthropic-models-sends-eu-sovereignty-surge-into-overdrive/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §1.1 (resilience)",
+      "§2.3 (Models weight)",
+      "Part III (Version Deadlock — live AI case)",
+      "Part V (uncertainty)",
+      "Conclusion",
+      "AI-SAF-N Models pillar and rule-stability modifier",
+      "AI-SAF-C Models pillar."
+    ],
+    "pillars": [
+      "models"
+    ],
+    "note": "Compiled from the originating report (The Verge, https://www.theverge.com/ai-artificial-intelligence/949986/anthropic-fable-mythos-shutdown-sovereign-ai) and cross-checked against the company statement and major business press above; wording on the directive’s exact scope — especially its extraterritorial reach to foreign-national employees — should be re-verified as reporting settles."
+  },
+  {
+    "slug": "fable-5-mythos-5-restoration-30-june-1-july-2026",
+    "title": "Fable 5 / Mythos 5 restoration (30 June – 1 July 2026) [Added v0.7.1]",
+    "date": "2026-07-01",
+    "dateDisplay": "30 June – 1 July 2026",
+    "part": "B",
+    "theme": "Sovereignty incidents — hardware, export controls, supply chain",
+    "isIncident": true,
+    "claim": "On 30 June 2026 the US Department of Commerce lifted the 12 June export-control directive. Fable 5 was restored to all customers worldwide on 1 July, ending a 19-day suspension; Mythos 5 was reintroduced only to approved US organisations following government review. Anthropic stated that the jailbreak cited by the government was narrow and that comparable capabilities could be elicited from other publicly available models not subject to similar controls. Reported aftermath includes closer collaboration between Anthropic and US agencies on model testing, threat sharing, and jailbreak-risk standards, and continued policy debate over whether model-access export controls become a repeated instrument.",
+    "sources": [
+      {
+        "citation": "Anthropic / CNBC, “Anthropic says Trump admin has lifted export controls on Claude Fable 5 and Mythos 5,” 30 June 2026",
+        "url": "https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html"
+      },
+      {
+        "citation": "Al Jazeera, “US lifts restrictions on powerful AI models Fable and Mythos,” 1 July 2026",
+        "url": "https://www.aljazeera.com/economy/2026/7/1/us-lifts-restrictions-on-powerful-ai-models-fable-mythos-anthropic-says"
+      },
+      {
+        "citation": "TechPolicy.Press, “Did the US Government Just Set An AI Export Precedent by Blocking Mythos?”",
+        "url": "https://www.techpolicy.press/did-the-us-government-just-set-an-ai-export-precedent-by-blocking-mythos/"
+      },
+      {
+        "citation": "Fortune, “Anthropic shutdown ignites calls for sovereign AI across Europe,” 16 June 2026  (including Austria’s 28 June letter urging EU hosting of Anthropic capacity).",
+        "url": "https://fortune.com/2026/06/16/anthropic-shutdown-sparks-global-scramble-for-sovereign-ai/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §1.1",
+      "§2.3",
+      "§3.4 (restoration is not recovery)",
+      "Part V",
+      "AI-SAF-C Models pillar (jurisdiction diversification)",
+      "AI-SAF-N rule-stability modifier."
+    ],
+    "pillars": [
+      "models"
+    ]
+  },
+  {
+    "slug": "us-chip-export-posture-codification-january-july-2026",
+    "title": "US chip-export posture codification (January – July 2026) [Added v0.7.1]",
+    "date": "2026-07",
+    "dateDisplay": "January – July 2026",
+    "part": "B",
+    "theme": "Sovereignty incidents — hardware, export controls, supply chain",
+    "isIncident": true,
+    "claim": "On 13 January 2026 the Commerce Department revised the licence-review posture for Nvidia H200- and AMD MI325X-class chips from presumption of denial to case-by-case review. In June 2026 BIS affirmed that its licensing requirements for advanced AI chips reach subsidiaries of Chinese-headquartered companies located outside China. In July 2026 Commerce said it would grant Nvidia export licences for the H20. Reported uptake has lagged policy: as of mid-May 2026, no H200 chips had shipped to the Chinese companies approved to buy them.",
+    "sources": [
+      {
+        "citation": "Mayer Brown, “Administration Policies on Advanced AI Chips Codified,” January 2026",
+        "url": "https://www.mayerbrown.com/en/insights/publications/2026/01/administration-policies-on-advanced-ai-chips-codified"
+      },
+      {
+        "citation": "Al Jazeera, “US says ban on AI chip shipments applies to Chinese firms outside China,” 1 June 2026",
+        "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china"
+      },
+      {
+        "citation": "Brookings, “Ball game’s over — the US is out of the AI chip market in China”",
+        "url": "https://www.brookings.edu/articles/ball-games-over-the-us-is-out-of-the-ai-chip-market-in-china/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3.1 (Hardware row)",
+      "Part V",
+      "AI-SAF-N Hardware pillar and rule-stability modifier",
+      "State of Play §3."
+    ],
+    "pillars": [
+      "hardware"
+    ]
+  },
+  {
+    "slug": "deepseek-v4-with-day-0-huawei-ascend-adaptation-april-2026",
+    "title": "DeepSeek-V4 with day-0 Huawei Ascend adaptation (April 2026) [Added v0.7.1]",
+    "date": "2026-04",
+    "dateDisplay": "April 2026",
+    "part": "B",
+    "theme": "Sovereignty incidents — hardware, export controls, supply chain",
+    "isIncident": true,
+    "claim": "DeepSeek released V4 in preview on 24 April 2026 with open weights under the MIT licence (reported 1.6-trillion-parameter Mixture-of-Experts design with ~1M-token context; figures pending verification against the technical report). Huawei Ascend (950PR/950DT), Cambricon, Hygon, and Moore Threads completed day-0 adaptation at launch — an architectural decision to treat the domestic Chinese stack as a first-class target rather than a fallback, and the strongest evidence to date that a top-tier Chinese model no longer requires NVIDIA’s CUDA.",
+    "sources": [
+      {
+        "citation": "Pandaily, “DeepSeek V4 Completes Full Adaptation to Huawei Ascend,” May 2026",
+        "url": "https://pandaily.com/deepseek-v4-huawei-ascend-adaptation-may2026"
+      },
+      {
+        "citation": "Huawei Central, “DeepSeek V4 and Huawei Ascend: a day 0 partnership”",
+        "url": "https://www.huaweicentral.com/deepseek-v4-and-huawei-ascend-ai/"
+      },
+      {
+        "citation": "“DeepSeek (chatbot),” Wikipedia (consolidating coverage)",
+        "url": "https://en.wikipedia.org/wiki/DeepSeek_(chatbot"
+      }
+    ],
+    "referencedIn": [
+      "Framework Part V (uncertainty resolved)",
+      "AI-SAF-N Models pillar (L4 example)",
+      "Software pillar",
+      "State of Play §1",
+      "§3."
+    ],
+    "pillars": [
+      "models",
+      "software"
+    ],
+    "note": "Parameter count, context length, and pricing circulate in trade press with some variance; verify against the DeepSeek technical report before relying on specific figures."
+  },
+  {
+    "slug": "intel-magdeburg-fab-cancellation",
+    "title": "Intel Magdeburg fab cancellation (24 July 2025)",
+    "date": "2025-07-24",
+    "dateDisplay": "24 July 2025",
+    "part": "C",
+    "theme": "Sovereignty incidents — manufacturing & critical materials",
+    "isIncident": true,
+    "claim": "Intel’s new CEO, Lip-Bu Tan, formally cancelled Intel’s planned €30+ billion “Silicon Junction” chip factory in Magdeburg, Germany (first announced in March 2022), along with a €4.6 billion assembly-and-test plant near Wrocław, Poland — part of a 15% staff cut down to about 75,000 employees. Intel said it had “decided not to move forward with previously planned projects in Germany and Poland” because “the company invested too much, too soon — without adequate demand.” Intel gave up roughly €10 billion in German EU Chips Act subsidies and $1.9 billion in EU state aid earmarked for Poland.",
+    "sources": [
+      {
+        "citation": "Intel Corporation, Q2 2025 earnings announcement and CEO memo of 24 July 2025",
+        "url": null
+      },
+      {
+        "citation": "Brussels Signal, “Intel cancels multi-billion euro chip factory in Germany,” 25 July 2025",
+        "url": "https://brusselssignal.eu/2025/07/intel-cancels-multi-billion-euro-chip-factory-in-germany/"
+      },
+      {
+        "citation": "heise online, “Intel gives up Magdeburg fab and announces end of foundry,” 25 July 2025",
+        "url": "https://www.heise.de/en/news/Intel-gives-up-Magdeburg-fab-and-announces-end-of-foundry-10499170.html"
+      },
+      {
+        "citation": "EE Times Europe, “Intel’s Retreat Shifts Europe Semiconductor Reality,” 7 November 2025",
+        "url": "https://www.eetimes.com/intel-retreat-shifts-europe-semiconductor-reality/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Manufacturing pillar",
+      "Refining §3.5"
+    ],
+    "pillars": [
+      "manufacturing"
+    ]
+  },
+  {
+    "slug": "china-rare-earth-export-controls",
+    "title": "China rare-earth export controls (9 October → 9 November 2025 pause)",
+    "date": "2025-11-09",
+    "dateDisplay": "9 October → 9 November 2025 pause",
+    "part": "C",
+    "theme": "Sovereignty incidents — manufacturing & critical materials",
+    "isIncident": true,
+    "claim": "China’s Commerce Ministry (MOFCOM) announcements Nos. 55–58, 61 and 62 (9 October 2025) sharply widened China’s controls on exporting rare-earth metals. After the Trump–Xi meeting in Busan, MOFCOM announcements Nos. 70 and 72 (7–9 November 2025) put those controls on hold until 10 November 2026. China refines roughly 89% of the world’s rare earths and controls almost the entire supply chain for high-performance rare-earth magnets. The earlier licensing rules of 4 April 2025, covering seven heavy rare-earth elements (scandium, yttrium, samarium, gadolinium, terbium, dysprosium, lutetium), stay in force. In November 2025, EU Commissioner Stéphane Séjourné announced plans for an EU critical-minerals centre to buy and stockpile these materials jointly.",
+    "sources": [
+      {
+        "citation": "Dorcas Wong and Qian Zhou, “China’s Rare Earth Export Controls — Impact on Businesses and Industries,” China Briefing, 12 November 2025",
+        "url": "https://www.china-briefing.com/news/chinas-rare-earth-export-controls-impacts-on-businesses/"
+      },
+      {
+        "citation": "Clark Hill PLC, “China Hits Pause on Rare-Earth Export Controls”",
+        "url": "https://www.clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains/"
+      },
+      {
+        "citation": "European Parliament Research Service, “China’s rare-earth export restrictions,” November 2025",
+        "url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_ATA(2025)779220"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Manufacturing pillar",
+      "Refining §3.5"
+    ],
+    "pillars": [
+      "manufacturing"
+    ]
+  },
+  {
+    "slug": "s3ns-secnumcloud-3-2-qualification",
+    "title": "S3NS SecNumCloud 3.2 qualification (17–19 December 2025)",
+    "date": "2025-12-19",
+    "dateDisplay": "17–19 December 2025",
+    "part": "D",
+    "theme": "Sovereign stack responses",
+    "isIncident": true,
+    "claim": "S3NS, a joint venture between Thales and Google Cloud, won SecNumCloud 3.2 certification from France’s cybersecurity agency ANSSI on 17 December 2025 for its PREMI3NS service. The service is run entirely by S3NS staff in France, with a “quarantine zone” that screens Google’s updates — making it the first major cloud service built on U.S. technology to earn SecNumCloud certification.",
+    "sources": [
+      {
+        "citation": "S3NS SAS, “S3NS Announces SecNumCloud Qualification for PREMI3NS,” press release, 19 December 2025",
+        "url": "https://www.businesswire.com/news/home/20251218817208/en/S3NS-Announces-SecNumCloud-Qualification-for-PREMI3NS-its-Trusted-Cloud-Offering"
+      },
+      {
+        "citation": "Thales Group, “S3NS receives SecNumCloud qualification,” 19 December 2025",
+        "url": "https://www.thalesgroup.com/en/news-centre/insights/group/s3ns-receives-secnumcloud-qualification-turning-point-trusted-cloud"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Infrastructure pillar",
+      "AI-SAF-C Infrastructure pillar",
+      "Refining §3.3"
+    ],
+    "pillars": [
+      "infrastructure"
+    ]
+  },
+  {
+    "slug": "aws-european-sovereign-cloud-general-availability",
+    "title": "AWS European Sovereign Cloud general availability (15 January 2026)",
+    "date": "2026-01-15",
+    "dateDisplay": "15 January 2026",
+    "part": "D",
+    "theme": "Sovereign stack responses",
+    "isIncident": true,
+    "claim": "The AWS European Sovereign Cloud became generally available on 15 January 2026, with its first data-centre region in Brandenburg, Germany, backed by a €7.8 billion commitment. It is run through EU-only German subsidiaries with EU-citizen managing directors (Stéphane Israël and Stefan Hoechbauer) and an EU-only advisory board. But the legal entity is still wholly owned by Amazon.com Inc., and commentators have pointed out that CLOUD Act exposure arguably remains.",
+    "sources": [
+      {
+        "citation": "Amazon Web Services, “AWS Launches AWS European Sovereign Cloud and Announces Expansion Across Europe,” press release, Potsdam, 15 January 2026",
+        "url": "https://press.aboutamazon.com/aws/2026/1/aws-launches-aws-european-sovereign-cloud-and-announces-expansion-across-europe"
+      },
+      {
+        "citation": "AWS Blog, “Opening the AWS European Sovereign Cloud,” 14 January 2026",
+        "url": "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/"
+      },
+      {
+        "citation": "InfoQ, “AWS Launches European Sovereign Cloud amid Questions about US Legal Jurisdiction,” 22 January 2026",
+        "url": "https://www.infoq.com/news/2026/01/aws-european-sovereign-cloud/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Infrastructure pillar",
+      "AI-SAF-C Infrastructure pillar",
+      "Refining §3.3"
+    ],
+    "pillars": [
+      "infrastructure"
+    ]
+  },
+  {
+    "slug": "eurohpc-ai-factories",
+    "title": "EuroHPC AI Factories (December 2024 → October 2025)",
+    "date": "2025-10",
+    "dateDisplay": "December 2024 → October 2025",
+    "part": "D",
+    "theme": "Sovereign stack responses",
+    "isIncident": true,
+    "claim": "The EuroHPC Joint Undertaking (a joint EU supercomputing program) has chosen 19 AI Factories across 16 EU member states, in three rounds: seven in December 2024 (Finland, Germany, Greece, Italy, Luxembourg, Spain, Sweden), six in March 2025 (Austria, Bulgaria, France, Germany, Poland, Slovenia), and six in October 2025 (Czech Republic, Lithuania, Netherlands, Romania, Spain, Poland). On top of that, 13 smaller AI Factory “Antennas” were chosen in Belgium, Cyprus, Hungary, Ireland, Latvia, Malta, Slovakia, Iceland, Moldova, North Macedonia, Serbia, Switzerland and the UK. The combined EU-and-member-state commitment is more than €2.6–2.7 billion.",
+    "sources": [
+      {
+        "citation": "EuroHPC JU, “AI Factories,” programme page",
+        "url": "https://www.eurohpc-ju.europa.eu/ai-factories_en"
+      },
+      {
+        "citation": "EuroHPC JU, “Six additional AI Factories to Expand Europe’s AI Capabilities,” 10 October 2025",
+        "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-selects-six-additional-ai-factories-expand-europes-ai-capabilities-2025-10-10_en"
+      },
+      {
+        "citation": "European Commission, “EU expands network of AI Factories”",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/eu-expands-network-ai-factories-strengthening-its-ai-continent-ambition"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Infrastructure pillar",
+      "Refining §3.3"
+    ],
+    "pillars": [
+      "infrastructure"
+    ]
+  },
+  {
+    "slug": "stargate-uae",
+    "title": "Stargate UAE (announced 22 May 2025; first phase Q3 2026)",
+    "date": "2025-05-22",
+    "dateDisplay": "announced 22 May 2025; first phase Q3 2026",
+    "part": "D",
+    "theme": "Sovereign stack responses",
+    "isIncident": true,
+    "claim": "Stargate UAE is a 1-gigawatt cluster of AI computing power being built by G42 (run by OpenAI and Oracle, with NVIDIA supplying Grace Blackwell GB300 systems, Cisco providing the networking, and SoftBank taking part) inside a planned 5-gigawatt UAE–US AI Campus. The first 200-megawatt phase is due to be finished in Q3 2026, according to Khazna Data Centres (December 2025). Reported investment is close to $20 billion. It was announced with UAE President Sheikh Mohamed bin Zayed Al Nahyan and U.S. President Donald Trump present.",
+    "sources": [
+      {
+        "citation": "G42 Inc., “Global Tech Alliance Launches Stargate UAE,” press release, 22 May 2025",
+        "url": "https://www.g42.ai/resources/news/global-tech-alliance-launches-stargate-uae"
+      },
+      {
+        "citation": "OpenAI, “Introducing Stargate UAE”",
+        "url": "https://openai.com/index/introducing-stargate-uae/"
+      },
+      {
+        "citation": "The National, “Stargate UAE’s first phase to be completed in third quarter of 2026,” 5 December 2025",
+        "url": "https://www.thenationalnews.com/business/2025/12/05/stargate-uaes-first-phase-to-be-completed-in-third-quarter-of-2026/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Infrastructure pillar",
+      "AI-SAF-N Hardware pillar",
+      "Refining §3.3"
+    ],
+    "pillars": [
+      "infrastructure",
+      "hardware"
+    ]
+  },
+  {
+    "slug": "mistral-ai-series-c",
+    "title": "Mistral AI Series C (9 September 2025)",
+    "date": "2025-09-09",
+    "dateDisplay": "9 September 2025",
+    "part": "D",
+    "theme": "Sovereign stack responses",
+    "isIncident": true,
+    "claim": "Mistral AI raised €1.7 billion in a Series C funding round led by ASML (which put in €1.3 billion for about an 11% stake once all shares are counted), valuing the company at €11.7 billion afterward. DST Global, Andreessen Horowitz, Bpifrance, Lightspeed, Nvidia and others also took part. It is the largest single private investment in a European AI model company so far, and puts France at Level 4 on the AI-SAF-N Models scale.",
+    "sources": [
+      {
+        "citation": "Mistral AI, “Mistral AI raises €1.7B to accelerate technological progress with AI,” 9 September 2025",
+        "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai"
+      },
+      {
+        "citation": "Arjun Kharpal, “AI firm Mistral valued at $14 billion as chip giant ASML takes major stake,” CNBC, 9 September 2025",
+        "url": "https://www.cnbc.com/2025/09/09/ai-firm-mistral-valued-at-14-billion-as-asml-takes-major-stake.html"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Models pillar (France worked example)",
+      "Refining §5.2"
+    ],
+    "pillars": [
+      "models"
+    ]
+  },
+  {
+    "slug": "insait-bggpt-3-0",
+    "title": "INSAIT BgGPT 3.0 (March 2026)",
+    "date": "2026-03",
+    "dateDisplay": "March 2026",
+    "part": "D",
+    "theme": "Sovereign stack responses",
+    "isIncident": true,
+    "claim": "INSAIT released BgGPT 3.0 in three sizes — 4 billion, 12 billion, and 27 billion parameters — built on Google’s Gemma 3 and further trained on more than 100 billion words of Bulgarian text. It can handle images as well as text, remembers up to about 131,000 tokens of context at once, was pre-trained on data through May 2025, and had its instruction tuning finished through October 2025. It comes in full precision, a compressed (GPTQ W4A16) version, and the GGUF format. The earlier BgGPT (2023) was based on Gemma 2 and used about 85 billion Bulgarian and 15 billion English words, trained with the “Branch-and-Merge” method that INSAIT researchers published at the EMNLP 2024 conference. INSAIT runs its own dedicated systems for projects with Bulgaria’s National Revenue Agency and National Audit Office.",
+    "sources": [
+      {
+        "citation": "INSAIT, “INSAIT unveils a new generation of AI,” press release, March 2026",
+        "url": "https://insait.ai/insait-unveils-a-new-generation-of-ai-precision-models-for-business-and-an-upgraded-bggpt-chat-for-all-citizens/"
+      },
+      {
+        "citation": "Bulgarian News Agency (BTA), “Bulgaria Among Few Countries with Publicly Built Sovereign AI Offered Free to Citizens,” March 2026",
+        "url": null
+      },
+      {
+        "citation": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT model card on Hugging Face",
+        "url": "https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT"
+      },
+      {
+        "citation": "Google DeepMind, “INSAIT creates leading Bulgarian-first LLM with Gemma 2”",
+        "url": "https://deepmind.google/models/gemma/gemmaverse/insait/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Models pillar",
+      "AI-SAF-N Case Study (Part IV)",
+      "Refining §2",
+      "§5.1"
+    ],
+    "pillars": [
+      "models"
+    ]
+  },
+  {
+    "slug": "eu-ai-act-gpai-obligations-applicable",
+    "title": "EU AI Act — GPAI obligations applicable (2 August 2025)",
+    "date": "2025-08-02",
+    "dateDisplay": "2 August 2025",
+    "part": "E",
+    "theme": "Regulatory instruments",
+    "isIncident": true,
+    "claim": "Regulation (EU) 2024/1689 (the AI Act) was adopted on 13 June 2024, published in the EU’s Official Journal on 12 July 2024, and came into force on 2 August 2024. The bans on certain uses and the AI-literacy duties took effect on 2 February 2025. The duties on providers of general-purpose AI (GPAI) models kicked in on 2 August 2025, and the Commission can enforce them from 2 August 2026. GPAI models already on the market before August 2025 must fully comply by 2 August 2027. Fines for GPAI providers can reach 3% of yearly worldwide revenue or €15 million, whichever is higher (AI Act Article 101).",
+    "sources": [
+      {
+        "citation": "Regulation (EU) 2024/1689 of 13 June 2024, OJ L of 12 July 2024",
+        "url": null
+      },
+      {
+        "citation": "Future of Life Institute, “EU AI Act Implementation Timeline”",
+        "url": "https://artificialintelligenceact.eu/implementation-timeline/"
+      },
+      {
+        "citation": "Latham & Watkins, “EU AI Act: GPAI Model Obligations in Force and Final GPAI Code of Practice in Place”",
+        "url": "https://www.lw.com/en/insights/eu-ai-act-gpai-model-obligations-in-force-and-final-gpai-code-of-practice-in-place"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Regulatory pillar",
+      "AI-SAF-C Regulatory pillar",
+      "Refining §3.2",
+      "§3.8"
+    ],
+    "pillars": [
+      "regulatory"
+    ]
+  },
+  {
+    "slug": "gpai-code-of-practice",
+    "title": "GPAI Code of Practice (published 10 July 2025; endorsed 1 August 2025)",
+    "date": "2025-07-10",
+    "dateDisplay": "published 10 July 2025; endorsed 1 August 2025",
+    "part": "E",
+    "theme": "Regulatory instruments",
+    "isIncident": true,
+    "claim": "The General-Purpose AI Code of Practice was published by the European Commission’s AI Office on 10 July 2025, and the Commission and the AI Board formally backed it on 1 August 2025. It has three chapters (Transparency; Copyright; Safety and Security) covering 12 commitments. xAI signed only the Safety and Security chapter. Amazon, Google, Microsoft, OpenAI, Anthropic and others signed all three. Meta refused to sign.",
+    "sources": [
+      {
+        "citation": "European Commission / AI Office, “The General-Purpose AI Code of Practice”",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai"
+      },
+      {
+        "citation": "Jimmy Farrell and Tekla Emborg, “An Introduction to the Code of Practice for General-Purpose AI,” FLI, 14 August 2025",
+        "url": "https://artificialintelligenceact.eu/introduction-to-code-of-practice/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Regulatory pillar",
+      "Refining §3.2"
+    ],
+    "pillars": [
+      "regulatory"
+    ]
+  },
+  {
+    "slug": "council-of-europe-framework-convention-on-ai-cets-no-225",
+    "title": "Council of Europe Framework Convention on AI, CETS No. 225 (in force 1 November 2025)",
+    "date": "2025-11-01",
+    "dateDisplay": "in force 1 November 2025",
+    "part": "E",
+    "theme": "Regulatory instruments",
+    "isIncident": true,
+    "claim": "Adopted by the Council of Europe’s Committee of Ministers on 17 May 2024 and opened for countries to sign on 5 September 2024 in Vilnius. It is the first international AI treaty that is legally binding. It came into force on 1 November 2025, once the United Kingdom, France, Norway and others had ratified it (the trigger was five signatories, including at least three Council of Europe members). Early signatories include the EU, the US, the UK, Andorra, Georgia, Iceland, Norway, Moldova, San Marino and Israel. It was negotiated by the 46 Council of Europe member states, the EU, and 11 non-member states (Argentina, Australia, Canada, Costa Rica, Holy See, Israel, Japan, Mexico, Peru, US, Uruguay).",
+    "sources": [
+      {
+        "citation": "Council of Europe, CETS No. 225 (full text)",
+        "url": "https://rm.coe.int/1680afae3c"
+      },
+      {
+        "citation": "Council of Europe, “Council of Europe opens first ever global treaty on AI for signature,” 5 September 2024",
+        "url": "https://www.coe.int/en/web/portal/-/council-of-europe-opens-first-ever-global-treaty-on-ai-for-signature"
+      },
+      {
+        "citation": "BABL AI, “Council of Europe Opens Historic AI and Human Rights Treaty for Signatures,” updated August 2025",
+        "url": "https://babl.ai/council-of-europe-opens-historic-ai-and-human-rights-treaty-for-signatures/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Regulatory pillar",
+      "Refining §3.8"
+    ],
+    "pillars": [
+      "regulatory"
+    ]
+  },
+  {
+    "slug": "paris-ai-action-summit",
+    "title": "Paris AI Action Summit (10–11 February 2025)",
+    "date": "2025-02-11",
+    "dateDisplay": "10–11 February 2025",
+    "part": "E",
+    "theme": "Regulatory instruments",
+    "isIncident": true,
+    "claim": "The third international AI summit, held at the Grand Palais in Paris, produced the “Statement on Inclusive and Sustainable Artificial Intelligence,” signed by 61 countries and bodies including France, China, India, Japan, Australia, Canada and the EU. The United States and United Kingdom refused to sign; U.S. Vice President JD Vance criticised European AI rules in a Tuesday speech, while the UK government said the statement lacked enough substance on global governance. India, the co-chair, was named as host of the next event, the New Delhi AI Impact Summit (February 2026).",
+    "sources": [
+      {
+        "citation": "“Statement on Inclusive and Sustainable Artificial Intelligence,” Paris AI Action Summit, 10–11 February 2025",
+        "url": null
+      },
+      {
+        "citation": "Ryan Browne, “US and Britain snub international AI accord in Paris,” CNBC, 11 February 2025",
+        "url": "https://www.cnbc.com/2025/02/11/us-and-britain-snub-international-ai-accord-in-paris.html"
+      },
+      {
+        "citation": "Al Jazeera, “Paris AI summit: Why won’t US, UK sign global artificial intelligence pact?,” 12 February 2025",
+        "url": "https://www.aljazeera.com/news/2025/2/12/paris-ai-summit-why-wont-us-uk-sign-global-artificial-intelligence-pact"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Regulatory pillar",
+      "Refining §3.8"
+    ],
+    "pillars": [
+      "regulatory"
+    ]
+  },
+  {
+    "slug": "bartz-v-anthropic-summary-judgment",
+    "title": "Bartz v. Anthropic — Summary Judgment (23 June 2025)",
+    "date": "2025-06-23",
+    "dateDisplay": "23 June 2025",
+    "part": "F",
+    "theme": "Copyright and legal rulings",
+    "isIncident": true,
+    "claim": "In Bartz v. Anthropic PBC, No. 3:24-cv-05417 (N.D. Cal.), Judge William Alsup ruled — without a full trial — that training AI models on copyrighted books was “exceedingly transformative” and counted as fair use. But he found that Anthropic downloading and keeping pirated copies from illegal book sites (Library Genesis, Pirate Library Mirror) was NOT fair use, and that part went on toward trial. On 26 August 2025, Anthropic filed notice of a proposed settlement covering the whole group of plaintiffs.",
+    "sources": [
+      {
+        "citation": "Skadden, Arps, Slate, Meagher & Flom, “Fair Use and AI Training: Two Recent Decisions,” July 2025",
+        "url": "https://www.skadden.com/insights/publications/2025/07/fair-use-and-ai-training"
+      },
+      {
+        "citation": "White & Case, “Two California district judges rule that using books to train AI is fair use,” 9 July 2025",
+        "url": "https://www.whitecase.com/insight-alert/two-california-district-judges-rule-using-books-train-ai-fair-use"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Data pillar",
+      "AI-SAF-C Data pillar",
+      "Refining §3.2"
+    ],
+    "pillars": [
+      "data"
+    ]
+  },
+  {
+    "slug": "bartz-v-anthropic-final-settlement-approval-20-july-2026",
+    "title": "Bartz v. Anthropic — Final settlement approval (20 July 2026) [Added v0.7.1]",
+    "date": "2026-07-20",
+    "dateDisplay": "20 July 2026",
+    "part": "F",
+    "theme": "Copyright and legal rulings",
+    "isIncident": true,
+    "claim": "On 20 July 2026 Judge Araceli Martínez-Olguín (N.D. Cal.) granted final approval of the $1.5 billion class settlement — the largest copyright class settlement on record — paying roughly $3,000 per work across an estimated 500,000 works. The settlement does not release future output-based claims.",
+    "sources": [
+      {
+        "citation": "The Authors Guild, “Court Grants Final Approval of $1.5 Billion Anthropic Copyright Settlement”",
+        "url": "https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/"
+      },
+      {
+        "citation": "TechCrunch, 20 July 2026",
+        "url": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3.1 (Data row)",
+      "AI-SAF-C Data pillar",
+      "State of Play §6."
+    ],
+    "pillars": [
+      "data"
+    ]
+  },
+  {
+    "slug": "kadrey-v-meta-summary-judgment",
+    "title": "Kadrey v. Meta — Summary Judgment (25 June 2025)",
+    "date": "2025-06-25",
+    "dateDisplay": "25 June 2025",
+    "part": "F",
+    "theme": "Copyright and legal rulings",
+    "isIncident": true,
+    "claim": "In Kadrey v. Meta Platforms, Inc., No. 23-CV-03417-VC (N.D. Cal.), 2025 WL 1752484, Judge Vince Chhabria ruled in Meta’s favour on fair use for the books of 13 plaintiffs, without a full trial. The ruling was narrow and tied to the specific facts: the plaintiffs had not built a strong enough case that the training hurt the market for their books. Judge Chhabria pointedly said his ruling did not give AI training on copyrighted works a green light more generally.",
+    "sources": [
+      {
+        "citation": "White & Case, “Two California district judges rule that using books to train AI is fair use,” 9 July 2025",
+        "url": "https://www.whitecase.com/insight-alert/two-california-district-judges-rule-using-books-train-ai-fair-use"
+      },
+      {
+        "citation": "Jackson Walker LLP, “Federal Courts Find Fair Use in AI Training,” 11 July 2025",
+        "url": "https://www.jw.com/news/insights-kadrey-meta-bartz-anthropic-ai-copyright/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-C Data pillar",
+      "Refining §3.2"
+    ],
+    "pillars": [
+      "data"
+    ]
+  },
+  {
+    "slug": "getty-images-v-stability-ai-uk-judgment-ewhc-2863-ch-4-november-2025",
+    "title": "Getty Images v. Stability AI (UK) — Judgment [2025] EWHC 2863 (Ch), 4 November 2025",
+    "date": "2025-11-04",
+    "dateDisplay": "4 November 2025",
+    "part": "F",
+    "theme": "Copyright and legal rulings",
+    "isIncident": true,
+    "claim": "Mrs Justice Joanna Smith DBE of the High Court of England and Wales (Chancery Division) gave judgment in Getty Images (US) Inc & Ors v Stability AI Ltd on 4 November 2025. The court threw out Getty’s secondary copyright claim — ruling that a Stable Diffusion model’s internal settings (its “weights”) are not an “infringing copy” under sections 22–23 of the UK’s 1988 copyright law (the CDPA) — and found only limited trademark infringement involving reproduced watermarks. Getty had already dropped its main claim, that the training itself infringed copyright, because the training had happened outside the UK. This is the first significant UK ruling on copyright and AI training.",
+    "sources": [
+      {
+        "citation": "Getty Images (US) Inc & Ors v Stability AI Limited [2025] EWHC 2863 (Ch), full judgment",
+        "url": "https://www.judiciary.uk/wp-content/uploads/2025/11/Getty-Images-v-Stability-AI.pdf"
+      },
+      {
+        "citation": "Ropes & Gray, “Getty Image Loses Copyright Infringement Claim Against Stability AI,” 14 January 2026",
+        "url": "https://www.ropesgray.com/en/insights/viewpoints/102lvxe/getty-image-loses-copyright-infringement-claim-against-stability-ai-in-uks-first"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Data pillar",
+      "Refining §3.2"
+    ],
+    "pillars": [
+      "data"
+    ]
+  },
+  {
+    "slug": "shumailov-et-al-model-collapse",
+    "title": "Shumailov et al. — Model collapse (Nature, 24 July 2024)",
+    "date": "2024-07-24",
+    "dateDisplay": "Nature, 24 July 2024",
+    "part": "G",
+    "theme": "Research and technical references",
+    "isIncident": false,
+    "claim": "Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson and Yarin Gal, “AI models collapse when trained on recursively generated data,” Nature 631, no. 8022 (24 July 2024): 755–759, DOI 10.1038/s41586-024-07566-y. Shows that carelessly training models on content earlier models generated causes “irreversible defects” in later versions: the rare, unusual cases gradually vanish. The effect showed up across several kinds of model (large language models, variational autoencoders, and Gaussian mixture models). The authors issued a correction in Nature 640, E6 (2025), DOI 10.1038/s41586-025-08905-3.",
+    "sources": [
+      {
+        "citation": "Nature 631 (2024): 755–759",
+        "url": "https://www.nature.com/articles/s41586-024-07566-y"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Data pillar",
+      "Refining §3.1"
+    ],
+    "pillars": [
+      "data"
+    ]
+  },
+  {
+    "slug": "borji-note-on-shumailov-et-al",
+    "title": "Borji — Note on Shumailov et al. (arXiv, October 2024)",
+    "date": "2024-10",
+    "dateDisplay": "arXiv, October 2024",
+    "part": "G",
+    "theme": "Research and technical references",
+    "isIncident": false,
+    "claim": "Ali Borji, “A Note on Shumailov et al. (2024): AI Models Collapse When Trained on Recursively Generated Data,” arXiv:2410.12954 [cs.LG], October 2024. Argues that model collapse is “a statistical phenomenon and may be unavoidable” any time you repeatedly fit a pattern to data and then draw new samples from it.",
+    "sources": [
+      {
+        "citation": "arXiv:2410.12954",
+        "url": "https://arxiv.org/abs/2410.12954"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Data pillar",
+      "Refining §3.1"
+    ],
+    "pillars": [
+      "data"
+    ]
+  },
+  {
+    "slug": "deepseek-v3-technical-report",
+    "title": "DeepSeek-V3 Technical Report (27 December 2024)",
+    "date": "2024-12-27",
+    "dateDisplay": "27 December 2024",
+    "part": "G",
+    "theme": "Research and technical references",
+    "isIncident": false,
+    "claim": "DeepSeek-AI team, “DeepSeek-V3 Technical Report,” arXiv:2412.19437 (initial 27 December 2024, updated 18 February 2025). DeepSeek-V3 is a “Mixture-of-Experts” model — one that has 671 billion parameters in total but only switches on 37 billion at a time — trained on 14.8 trillion tokens of text. The reported training cost: 2.664 million H800 GPU-hours for the main training, 119,000 for extending its context length, and 5,000 for final tuning, for a total of 2.788 million GPU-hours; at $2 per H800 GPU-hour, that comes to about $5.576 million. That figure leaves out earlier research, trial-and-error experiments, and the cost of the underlying hardware spread over time. Its technical innovations include FP8 mixed-precision training, a way of balancing the load without an extra penalty term, and predicting several tokens at once.",
+    "sources": [
+      {
+        "citation": "arXiv:2412.19437",
+        "url": "https://arxiv.org/abs/2412.19437"
+      }
+    ],
+    "referencedIn": [
+      "Framework §2",
+      "AI-SAF-N Models pillar",
+      "Refining §3.2"
+    ],
+    "pillars": [
+      "models"
+    ]
+  },
+  {
+    "slug": "stanford-ai-index-2026",
+    "title": "Stanford AI Index 2026 (April 2026)",
+    "date": "2026-04",
+    "dateDisplay": "April 2026",
+    "part": "G",
+    "theme": "Research and technical references",
+    "isIncident": false,
+    "claim": "The 2026 edition of the Stanford Institute for Human-Centered AI (HAI) AI Index Report was published in April 2026. The ninth yearly edition; it covers research, technical performance, responsible AI, economics, science, medicine, education, policy, and public opinion. The key 2026 findings the framework draws on: the capability gap between the top US and Chinese models has all but closed; 44 countries now run government-backed supercomputers; 80 of the 95 most notable 2025 models were released without their training code; the Foundation Model Transparency Index average score dropped to 40 (from 58); and almost the entire global AI industry still depends on TSMC’s chip factories in Taiwan.",
+    "sources": [
+      {
+        "citation": "Stanford HAI, 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3",
+      "AI-SAF-N all pillars",
+      "AI-SAF-C all pillars",
+      "Refining §1.3",
+      "§3.7"
+    ],
+    "pillars": [
+      "data",
+      "models",
+      "infrastructure",
+      "hardware",
+      "manufacturing",
+      "software",
+      "humanCapital",
+      "regulatory",
+      "culture"
+    ]
+  },
+  {
+    "slug": "imf-ai-preparedness-index",
+    "title": "IMF AI Preparedness Index (AIPI)",
+    "date": null,
+    "dateDisplay": "",
+    "part": "H",
+    "theme": "Benchmark frameworks (peer indices)",
+    "isIncident": false,
+    "claim": "Covers 174 economies across four equally-weighted areas: digital infrastructure, people and labor-market policy, innovation and economic links, and regulation and ethics. The underlying measures are each rescaled to a 0–1 range (using the min-max method), then the four areas are averaged. Wealthy economies average 0.68, emerging markets 0.46, and low-income countries 0.32. The data is pulled together from the Fraser Institute, ILO, ITU, UN, UNCTAD, Universal Postal Union, World Bank, and World Economic Forum.",
+    "sources": [
+      {
+        "citation": "IMF Datamapper: AI Preparedness Index (AIPI)",
+        "url": "https://www.imf.org/external/datamapper/datasets/AIPI"
+      },
+      {
+        "citation": "AIPI Methodology Note",
+        "url": "https://www.imf.org/external/datamapper/AIPINote.pdf"
+      },
+      {
+        "citation": "Kristalina Georgieva et al., “Mapping the World’s Readiness for Artificial Intelligence,” IMF Blog, 25 June 2024",
+        "url": "https://www.imf.org/en/Blogs/Articles/2024/06/25/mapping-the-worlds-readiness-for-artificial-intelligence-shows-prospects-diverge"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3 comparison table",
+      "Refining §1.3"
+    ],
+    "pillars": []
+  },
+  {
+    "slug": "tortoise-global-ai-index",
+    "title": "Tortoise Global AI Index (5th edition, 19 September 2024)",
+    "date": "2024-09-19",
+    "dateDisplay": "5th edition, 19 September 2024",
+    "part": "H",
+    "theme": "Benchmark frameworks (peer indices)",
+    "isIncident": false,
+    "claim": "Covers 83 countries using 122 measures grouped under 3 headings (Implementation, Innovation, Investment) and 7 sub-headings (talent, infrastructure, operating environment, research, development, commercial ecosystem, government strategy). It draws on 24 public and private data sources. The United States ranked 1st, China 2nd, Singapore 3rd, the United Kingdom 4th, and France 5th. Saudi Arabia came top on the government-strategy sub-heading.",
+    "sources": [
+      {
+        "citation": "Tortoise Media, Global AI Index 2024",
+        "url": "https://www.tortoisemedia.com/data/global-ai"
+      },
+      {
+        "citation": "Methodology Report (September 2024)",
+        "url": "https://www.tortoisemedia.com/_app/immutable/assets/AI-Methodology-2409.BGTLUPC-.pdf"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3 comparison table",
+      "AI-SAF-N comparison",
+      "Refining §1.3"
+    ],
+    "pillars": []
+  },
+  {
+    "slug": "macropolo-global-ai-talent-tracker-2-0",
+    "title": "MacroPolo Global AI Talent Tracker 2.0 (March 2024, NeurIPS 2022 data)",
+    "date": "2024-03",
+    "dateDisplay": "March 2024, NeurIPS 2022 data",
+    "part": "H",
+    "theme": "Benchmark frameworks (peer indices)",
+    "isIncident": false,
+    "claim": "Published by the Paulson Institute. Based on a sample of 186 papers and 867 authors from the NeurIPS 2022 conference (95% confidence, give or take 7%). Key findings: 75% of the top AI researchers working at US institutions did their undergraduate degrees in the US or China (up from 58% in 2019); China produces 47% of the world’s top AI researchers, counted by where they did their undergraduate degree (up from 29% in 2019); the US is still the top destination for elite talent; and about 42% of top researchers work abroad (down from 55% in 2019), meaning fewer are moving around overall. Of Chinese AI undergraduates, 51.35% go on to graduate study at home, and 30.96% stay in China for that work. In India, one-fifth of AI researchers now stay in India after graduating (up from almost none in 2019).",
+    "sources": [
+      {
+        "citation": "MacroPolo, Global AI Talent Tracker 2.0",
+        "url": "https://archivemacropolo.org/interactive/digital-projects/the-global-ai-talent-tracker/"
+      },
+      {
+        "citation": "Methodology for Global AI Talent Tracker 2.0",
+        "url": "https://archivemacropolo.org/interactive/digital-projects/the-global-ai-talent-tracker/methodology-for-global-ai-talent-tracker-2/"
+      },
+      {
+        "citation": "Zeyi Yang, “Four things you need to know about China’s AI talent pool,” MIT Technology Review, 27 March 2024",
+        "url": "https://www.technologyreview.com/2024/03/27/1090182/ai-talent-global-china-us/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3",
+      "AI-SAF-N Human Capital pillar",
+      "AI-SAF-C Human Capital pillar",
+      "Refining §3.7"
+    ],
+    "pillars": [
+      "humanCapital"
+    ],
+    "note": "An earlier draft of the refinement white paper called this “Global AI Talent Tracker 3.0” — the correct name is 2.0, as shown above."
+  },
+  {
+    "slug": "nist-ai-risk-management-framework-ai-rmf-1-0-and-genai-profile",
+    "title": "NIST AI Risk Management Framework (AI RMF 1.0) and GenAI Profile",
+    "date": null,
+    "dateDisplay": "",
+    "part": "H",
+    "theme": "Benchmark frameworks (peer indices)",
+    "isIncident": false,
+    "claim": "National Institute of Standards and Technology, Artificial Intelligence Risk Management Framework, NIST AI 100-1 (Gaithersburg, MD: NIST, January 2023). A voluntary US framework built around four jobs: GOVERN, MAP, MEASURE, MANAGE. The Generative AI Profile (NIST AI 600-1, July 2024) tailors it for generative-AI systems, with 12 categories of risk. In practice, it is the go-to reference for managing AI risk in the US private sector.",
+    "sources": [
+      {
+        "citation": "NIST AI RMF 1.0",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      {
+        "citation": "AI RMF Playbook",
+        "url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3",
+      "AI-SAF-C Culture & Governance pillar (primary basis)",
+      "Refining §4.1"
+    ],
+    "pillars": [
+      "culture"
+    ]
+  },
+  {
+    "slug": "iso-iec-42001-2023-ai-management-system",
+    "title": "ISO/IEC 42001:2023 — AI Management System",
+    "date": null,
+    "dateDisplay": "",
+    "part": "H",
+    "theme": "Benchmark frameworks (peer indices)",
+    "isIncident": false,
+    "claim": "Published by ISO and IEC in December 2023. The first international AI management standard a company can actually be certified against. It is laid out the same way as ISO 27001 and ISO 9001 (the common “Annex SL” structure): Clauses 4–10 (Context, Leadership, Planning, Support, Operation, Performance Evaluation, Improvement) plus Annex A controls covering reducing bias, transparency, accountability, and data governance. Certification usually lasts three years, with yearly check-up audits in between. Microsoft 365 Copilot was certified in 2025.",
+    "sources": [
+      {
+        "citation": "ISO/IEC 42001:2023 standard page",
+        "url": "https://www.iso.org/standard/42001"
+      },
+      {
+        "citation": "ANAB, “ISO/IEC 42001: Artificial Intelligence Management Systems,” ANAB Blog",
+        "url": "https://blog.ansi.org/anab/iso-iec-42001-ai-management-systems/"
+      },
+      {
+        "citation": "Deloitte, “ISO 42001 Standard for AI Governance and Risk Management”",
+        "url": "https://www.deloitte.com/us/en/services/consulting/articles/iso-42001-standard-ai-governance-risk-management.html"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3",
+      "AI-SAF-C Culture & Governance pillar",
+      "AI-SAF-C Part V crosswalk",
+      "Refining §4.2"
+    ],
+    "pillars": [
+      "culture"
+    ]
+  },
+  {
+    "slug": "gaia-x-labelling-framework",
+    "title": "GAIA-X Labelling Framework",
+    "date": null,
+    "dateDisplay": "",
+    "part": "H",
+    "theme": "Benchmark frameworks (peer indices)",
+    "isIncident": false,
+    "claim": "GAIA-X European Association for Data and Cloud AISBL, Brussels. Its Labelling Framework version 2.0 and later updates set out six groups of criteria (data protection, cybersecurity, transparency, portability and interoperability, flexibility, and operational requirements) across three levels (L1, L2, L3). Level L3 — effectively fully sovereign — requires the same protection from foreign-reach laws as SecNumCloud. It lines up directly with the Infrastructure scoring bands in AI-SAF-N and AI-SAF-C.",
+    "sources": [
+      {
+        "citation": "GAIA-X Association, “Labelling Framework” documents",
+        "url": "https://gaia-x.eu/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3",
+      "AI-SAF-C Infrastructure pillar",
+      "AI-SAF-C Part V crosswalk",
+      "Refining §4.3"
+    ],
+    "pillars": [
+      "infrastructure"
+    ]
+  },
+  {
+    "slug": "oecd-ai-policy-observatory",
+    "title": "OECD.AI Policy Observatory",
+    "date": null,
+    "dateDisplay": "",
+    "part": "H",
+    "theme": "Benchmark frameworks (peer indices)",
+    "isIncident": false,
+    "claim": "Tracks national AI strategies, spending on computing power, and regulatory moves across OECD members and partner countries. It focuses on governance rather than on raw capability. It organises its data around the five OECD AI Principles (inclusive growth, human rights, transparency, robustness, and accountability). A useful companion to the indices that focus on capability.",
+    "sources": [
+      {
+        "citation": "OECD.AI",
+        "url": "https://oecd.ai/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3 comparison table",
+      "Refining §1.3"
+    ],
+    "pillars": []
+  },
+  {
+    "slug": "cset-eto",
+    "title": "CSET / ETO (Emerging Technology Observatory, Georgetown University)",
+    "date": null,
+    "dateDisplay": "",
+    "part": "H",
+    "theme": "Benchmark frameworks (peer indices)",
+    "isIncident": false,
+    "claim": "The Center for Security and Emerging Technology’s Emerging Technology Observatory runs several detailed dashboards: the Country Activity Tracker (CAT), the Private AI-Related Activity Tracker (PARAT), the Supply Chain Explorer, and AGORA. Together they are the most detailed public window into the chip and AI-research supply chains. Recommended as a primary source for scoring the AI-SAF Hardware and Manufacturing building blocks.",
+    "sources": [
+      {
+        "citation": "ETO dashboards",
+        "url": "https://eto.tech/"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3 comparison table",
+      "AI-SAF-N Hardware pillar",
+      "AI-SAF-N Manufacturing pillar",
+      "Refining §1.3"
+    ],
+    "pillars": [
+      "hardware",
+      "manufacturing"
+    ]
+  },
+  {
+    "slug": "other-peer-frameworks-referenced",
+    "title": "Other peer frameworks referenced",
+    "date": null,
+    "dateDisplay": "",
+    "part": "H",
+    "theme": "Benchmark frameworks (peer indices)",
+    "isIncident": false,
+    "claim": "Other frameworks worth consulting: the Stanford HAI AI Index (see Part G); the Oxford Insights Government AI Readiness Index (188 countries, focused on government capacity); the ECFR Technology Sovereignty Tracker (which maps the dependencies of the 27 EU member states); Bertelsmann Stiftung’s Sustainable Governance Indicators and EuroStack work; the Nextcloud Digital Sovereignty Index (EU-focused, centred on open-source hosting); the UNCTAD Technology and Innovation Report 2025; MIT CISR’s enterprise AI research; and the BCG, McKinsey, and Gartner enterprise AI-maturity models.",
+    "sources": [
+      {
+        "citation": "Oxford Insights Government AI Readiness Index",
+        "url": "https://oxfordinsights.com/ai-readiness/"
+      },
+      {
+        "citation": "UNCTAD Technology and Innovation Report",
+        "url": "https://unctad.org/publication/technology-and-innovation-report-2025"
+      }
+    ],
+    "referencedIn": [
+      "Framework §3 comparison table",
+      "Refining §1.3"
+    ],
+    "pillars": []
+  }
+]
