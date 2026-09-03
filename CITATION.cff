@@ -10,6 +10,7 @@ type: dataset
 authors:
   - family-names: Alexandrov
     given-names: G.
+    orcid: "https://orcid.org/0009-0004-4464-5465"
 version: 0.7.1
 date-released: "2026-08-01"
 doi: 10.5281/zenodo.22178006
